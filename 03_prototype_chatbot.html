@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Foxfit Chatbot — Demo Hybrid</title>
+<style>
+  :root{
+    --bg:#0d0b0a; --panel:#171310; --line:#3a2e24;
+    --copper:#c98a4b; --copper2:#e0a862; --rose:#d8a07a;
+    --text:#f2e9df; --muted:#a08f7f; --green:#5fbf7a; --blue:#6aa9e0;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    background:radial-gradient(circle at 50% -10%,#241a12 0%,var(--bg) 55%);color:var(--text);min-height:100vh}
+  .wrap{max-width:960px;margin:0 auto;padding:20px;display:grid;grid-template-columns:1fr 300px;gap:18px}
+  @media(max-width:820px){.wrap{grid-template-columns:1fr}}
+  header{grid-column:1/-1;text-align:center;padding:14px 0 4px}
+  header h1{margin:0;font-size:26px;letter-spacing:3px;
+    background:linear-gradient(180deg,var(--copper2),var(--copper));-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:800}
+  header p{margin:4px 0 0;color:var(--muted);font-size:12px;letter-spacing:2px;text-transform:uppercase}
+  .chat{background:var(--panel);border:1px solid var(--line);border-radius:16px;display:flex;flex-direction:column;height:560px;overflow:hidden}
+  .msgs{flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:12px}
+  .row{display:flex;gap:8px;align-items:flex-end}
+  .row.me{justify-content:flex-end}
+  .bubble{max-width:78%;padding:10px 13px;border-radius:14px;font-size:14px;line-height:1.5;white-space:pre-wrap}
+  .bot .bubble{background:#221b15;border:1px solid var(--line);border-bottom-left-radius:4px}
+  .me .bubble{background:linear-gradient(135deg,var(--copper),#a06f3a);color:#1a1207;border-bottom-right-radius:4px;font-weight:500}
+  .src{font-size:10px;margin-top:5px;letter-spacing:.5px;text-transform:uppercase;opacity:.9}
+  .src.brain{color:var(--green)} .src.api{color:var(--blue)}
+  .fox{width:30px;height:30px;border-radius:50%;flex:0 0 30px;
+    background:radial-gradient(circle at 30% 30%,var(--copper2),#6e4a24);display:flex;align-items:center;justify-content:center;font-size:16px}
+  .input{display:flex;gap:8px;padding:12px;border-top:1px solid var(--line)}
+  .input input{flex:1;background:#0f0c0a;border:1px solid var(--line);border-radius:10px;padding:11px 13px;color:var(--text);font-size:14px;outline:none}
+  .input input:focus{border-color:var(--copper)}
+  .input button{background:linear-gradient(135deg,var(--copper2),var(--copper));border:0;color:#1a1207;font-weight:700;padding:0 18px;border-radius:10px;cursor:pointer;font-size:14px}
+  .side{display:flex;flex-direction:column;gap:14px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px}
+  .card h3{margin:0 0 10px;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--rose)}
+  .stat{display:flex;justify-content:space-between;font-size:13px;padding:5px 0;border-bottom:1px dashed #2a221b}
+  .stat:last-child{border:0}
+  .stat b{font-variant-numeric:tabular-nums}
+  .big{font-size:30px;font-weight:800;text-align:center;margin:6px 0 2px}
+  .big.green{color:var(--green)}
+  .barwrap{height:8px;background:#0f0c0a;border-radius:6px;overflow:hidden;margin-top:6px}
+  .bar{height:100%;width:0;background:linear-gradient(90deg,var(--green),#3f9d5b);transition:width .4s}
+  .chips{display:flex;flex-wrap:wrap;gap:6px}
+  .chip{font-size:11px;background:#0f0c0a;border:1px solid var(--line);color:var(--muted);padding:6px 9px;border-radius:20px;cursor:pointer}
+  .chip:hover{border-color:var(--copper);color:var(--text)}
+  .note{font-size:11px;color:var(--muted);line-height:1.5}
+  .typing{font-size:12px;color:var(--muted);font-style:italic;padding:0 16px 8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>🦊 FOXFIT</h1>
+    <p>Chatbot Demo · Hybrid tiết kiệm credit</p>
+  </header>
+
+  <div class="chat">
+    <div class="msgs" id="msgs"></div>
+    <div class="typing" id="typing" style="display:none">Foxfit đang soạn tin…</div>
+    <div class="input">
+      <input id="inp" placeholder="Hỏi thử: giá bao nhiêu? có sauna không?" autocomplete="off">
+      <button id="send">Gửi</button>
+    </div>
+  </div>
+
+  <div class="side">
+    <div class="card">
+      <h3>Tiết kiệm credit</h3>
+      <div class="big green" id="pctSave">0%</div>
+      <div class="barwrap"><div class="bar" id="bar"></div></div>
+      <div class="note" style="margin-top:8px">Tỷ lệ câu trả lời bằng <b style="color:var(--green)">bộ não</b> (miễn phí), không gọi Claude.</div>
+    </div>
+    <div class="card">
+      <h3>Thống kê phiên</h3>
+      <div class="stat"><span>Tổng câu hỏi</span><b id="sTotal">0</b></div>
+      <div class="stat"><span style="color:var(--green)">Bộ não trả (free)</span><b id="sBrain">0</b></div>
+      <div class="stat"><span style="color:var(--blue)">Gọi Claude (tốn)</span><b id="sApi">0</b></div>
+    </div>
+    <div class="card">
+      <h3>Bấm thử nhanh</h3>
+      <div class="chips" id="chips"></div>
+    </div>
+    <div class="card">
+      <div class="note">🟢 <b>BỘ NÃO</b> = khớp knowledge base, 0 credit.<br>
+      🔵 <b>CLAUDE</b> = câu lạ/khó, mới gọi API. Trong bản thật, đây là lúc gửi 2–4 mẩu não liên quan tới Claude để soạn câu "như người".</div>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ====== BỘ NÃO (rút gọn từ brain.json — bản thật load từ file) ====== */
+const BRAIN = {
+  faq: [
+    {k:["giá","bao nhiêu","học phí","phí","gói","báo giá","tiền"], a:"Dạ Foxfit có các gói từ 1 tháng 600k tới 36 tháng ạ 🦊\n• 1 tháng: 600k\n• 3 tháng: 1.450k\n• 6 tháng: 2.200k\n• 12 tháng: 3.800k (tặng 2 tháng + khăn xịn 🎁)\nGói càng dài càng được tặng thêm tháng. Anh/chị muốn em tư vấn gói hợp mục tiêu không ạ?"},
+    {k:["mấy giờ","giờ mở","giờ giấc","mở cửa","đóng cửa"], a:"Phòng mở cửa 5:00–22:00 ạ, mình lại không giới hạn thời gian tập nữa 💪 (giờ demo, sửa lại trong brain.json)"},
+    {k:["ở đâu","địa chỉ","chỗ nào","đường","map","chỉ đường"], a:"Foxfit ở 【địa chỉ của mình】 ạ. Anh/chị cần em gửi link chỉ đường không?"},
+    {k:["pt","huấn luyện","hlv","kèm","personal trainer"], a:"Dạ Foxfit có HLV chuyên nghiệp đồng hành ạ. Anh/chị để lại SĐT em xếp buổi tư vấn với HLV cho hợp mục tiêu nha 👍"},
+    {k:["sauna","xông hơi","xông"], a:"Dạ có sauna xông hơi, riêng dành cho nữ ạ 🧖‍♀️ Thư giãn sau buổi tập rất đã."},
+    {k:["đá lạnh","ngâm đá","ice bath","ngâm lạnh"], a:"Bên em có ngâm đá lạnh giúp giảm viêm khớp và phục hồi cơ nhanh sau tập ạ ❄️"},
+    {k:["chấn thương","đau","rehab","phục hồi","giãn cơ"], a:"Foxfit có dịch vụ sport rehab hỗ trợ giãn cơ và phục hồi chấn thương ạ. Nếu nặng anh/chị nên hỏi bác sĩ trước, rồi tụi em hỗ trợ phục hồi cùng nha 🙏"},
+    {k:["máy lạnh","nóng","quạt","điều hòa","mát"], a:"Khu tập có máy lạnh ạ, ai không thích lạnh thì có quạt tản nhiệt, tập rất thoải mái."},
+    {k:["tặng","quà","khăn","ưu đãi","khuyến mãi"], a:"Đăng ký gói Members được tặng khăn xịn ạ 🎁 Gói dài từ 12 tháng còn tặng thêm tháng tập nữa nha."},
+    {k:["đặc biệt","khác gì","khác gym","nổi bật","có gì"], a:"Foxfit là boutique wellness club nên ngoài phòng tập máy lạnh còn có sauna (cho nữ), ngâm đá lạnh phục hồi và sport rehab ạ 🦊 Trải nghiệm khác hẳn gym thường."},
+    {k:["nữ","con gái","phụ nữ","to cơ","thô"], a:"Nữ tập rất hợp ở Foxfit ạ 🙆‍♀️ Tập tạ giúp săn chắc thon gọn chứ không 'to' đâu, lại có sauna riêng cho nữ thư giãn nữa."},
+    {k:["mới","chưa tập","người mới","lần đầu"], a:"Không sao ạ, nhiều bạn bắt đầu từ số 0 😄 Có HLV hướng dẫn buổi đầu. Ghé tập thử 1 buổi cho quen nha?"},
+    {k:["đăng ký","tập thử","tham quan","để lại","sđt","số điện thoại","đăng kí","hẹn"], a:"Dạ anh/chị để lại SĐT hoặc ghé trực tiếp, em giữ ưu đãi và xếp buổi tham quan/tập thử cho mình nha 👍"},
+    {k:["chào","hi","hello","alo","xin chào"], a:"Foxfit xin chào anh/chị 🦊 Em có thể tư vấn giá gói, dịch vụ sauna/ngâm đá lạnh, hoặc xếp buổi tập thử. Anh/chị đang quan tâm điều gì ạ?"},
+    {k:["cảm ơn","thank","thanks","cám ơn"], a:"Dạ không có gì ạ 🥰 Anh/chị cần thêm gì cứ nhắn em nha!"}
+  ]
+};
+const HANDOFF = ["chuyển khoản","đóng tiền","lấy gói","ký hợp đồng","khiếu nại","phàn nàn"];
+
+/* ====== LOGIC HYBRID ====== */
+let total=0, brainHits=0, apiHits=0;
+
+function normalize(s){return s.toLowerCase().normalize("NFC").replace(/\s+/g," ").trim();}
+
+function lookupBrain(text){
+  const t = normalize(text);
+  // handoff
+  if(HANDOFF.some(h=>t.includes(h)))
+    return {a:"Dạ để em chuyển anh/chị qua tư vấn viên hỗ trợ kỹ hơn nha, mình chờ chút xíu ạ 🙏", src:"brain", label:"BỘ NÃO · chuyển người thật"};
+  // score by keyword hits
+  let best=null, bestScore=0;
+  for(const f of BRAIN.faq){
+    let score=0;
+    for(const kw of f.k){ if(t.includes(kw)) score += kw.length; }
+    if(score>bestScore){bestScore=score;best=f;}
+  }
+  if(best && bestScore>0) return {a:best.a, src:"brain", label:"BỘ NÃO · miễn phí"};
+  return null;
+}
+
+// Giả lập Claude cho câu không khớp (bản thật sẽ gọi API + gửi mẩu não liên quan)
+function simulateClaude(text){
+  return "Dạ câu này em xin phép tư vấn kỹ hơn cho anh/chị 🦊 "
+       + "(Trong bản chạy thật, đây là lúc bot gửi các mẩu thông tin Foxfit liên quan tới Claude để soạn câu trả lời tự nhiên, giọng người.) "
+       + "Anh/chị để lại SĐT em nhờ tư vấn viên hỗ trợ ngay nha 👍";
+}
+
+function addMsg(text, who, label){
+  const row=document.createElement("div");
+  row.className="row "+(who==="me"?"me":"bot");
+  const inner = who==="me"
+    ? `<div class="bubble">${escapeHtml(text)}</div>`
+    : `<div class="fox">🦊</div><div><div class="bubble">${escapeHtml(text)}</div>${label?`<div class="src ${label.startsWith("BỘ")?"brain":"api"}">${label}</div>`:""}</div>`;
+  row.innerHTML=inner;
+  const box=document.getElementById("msgs");
+  box.appendChild(row); box.scrollTop=box.scrollHeight;
+}
+function escapeHtml(s){return s.replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));}
+
+function updateStats(){
+  document.getElementById("sTotal").textContent=total;
+  document.getElementById("sBrain").textContent=brainHits;
+  document.getElementById("sApi").textContent=apiHits;
+  const pct= total? Math.round(brainHits/total*100):0;
+  document.getElementById("pctSave").textContent=pct+"%";
+  document.getElementById("bar").style.width=pct+"%";
+}
+
+function handle(text){
+  if(!text.trim()) return;
+  addMsg(text,"me"); total++;
+  document.getElementById("typing").style.display="block";
+  setTimeout(()=>{
+    document.getElementById("typing").style.display="none";
+    const hit=lookupBrain(text);
+    if(hit){ brainHits++; addMsg(hit.a,"bot",hit.label); }
+    else { apiHits++; addMsg(simulateClaude(text),"bot","CLAUDE · tốn credit"); }
+    updateStats();
+  }, 550);
+}
+
+/* ====== UI wiring ====== */
+const inp=document.getElementById("inp");
+document.getElementById("send").onclick=()=>{handle(inp.value);inp.value="";};
+inp.addEventListener("keydown",e=>{if(e.key==="Enter"){handle(inp.value);inp.value="";}});
+
+const suggestions=["Giá bao nhiêu?","Có sauna không?","Ngâm đá lạnh để làm gì?","Có PT không?","Nữ tập có bị to không?","Phòng có nóng không?","Đăng ký tặng gì?","Tôi muốn giảm 5kg thì tập sao?"];
+const chips=document.getElementById("chips");
+suggestions.forEach(s=>{const c=document.createElement("div");c.className="chip";c.textContent=s;c.onclick=()=>handle(s);chips.appendChild(c);});
+
+addMsg("Foxfit xin chào anh/chị 🦊 Em là trợ lý ảo của Foxfit — Boutique Wellness Club. Anh/chị muốn hỏi về giá gói, dịch vụ, hay xếp buổi tập thử ạ?","bot","BỘ NÃO · lời chào");
+</script>
+</body>
+</html>

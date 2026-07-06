@@ -1,0 +1,61 @@
+{
+  "gym": {
+    "name": "Foxfit — Boutique Wellness Club",
+    "slogan": "Fit your life, fit your way",
+    "positioning": "Phòng tập boutique wellness cao cấp",
+    "address": "【ĐIỀN địa chỉ】",
+    "hours": "【ĐIỀN giờ mở cửa, ví dụ 5:00–22:00】",
+    "hotline": "【ĐIỀN】",
+    "fanpage": "【ĐIỀN】",
+    "highlights": [
+      "Trang thiết bị hiện đại",
+      "HLV chuyên nghiệp đồng hành",
+      "Tiện ích cao cấp đẳng cấp",
+      "Không giới hạn thời gian tập"
+    ]
+  },
+  "pricing": [
+    { "goi": "1 tháng",  "gia": 600000,  "tang_them": null,        "note": "" },
+    { "goi": "3 tháng",  "gia": 1450000, "tang_them": null,        "note": "" },
+    { "goi": "6 tháng",  "gia": 2200000, "tang_them": null,        "note": "" },
+    { "goi": "12 tháng", "gia": 3800000, "tang_them": "2 tháng",   "note": "≈9k/ngày" },
+    { "goi": "18 tháng", "gia": 5500000, "tang_them": "3 tháng",   "note": "" },
+    { "goi": "24 tháng", "gia": 6500000, "tang_them": "4 tháng",   "note": "" },
+    { "goi": "36 tháng", "gia": 9500000, "tang_them": "6 tháng",   "note": "" }
+  ],
+  "qua_dang_ky": "Tặng khăn xịn khi đăng ký gói Members",
+  "services": [
+    { "ten": "Sport rehab", "mo_ta": "Giãn cơ hoặc hỗ trợ điều trị/phục hồi chấn thương" },
+    { "ten": "Sauna xông hơi", "mo_ta": "Chỉ dành cho nữ, thư giãn sau tập" },
+    { "ten": "Ngâm đá lạnh (ice bath)", "mo_ta": "Giảm viêm khớp, phục hồi cơ nhanh" }
+  ],
+  "khu_tap": [
+    "Có máy lạnh",
+    "Có quạt tản nhiệt nếu không thích máy lạnh"
+  ],
+  "persona": {
+    "xung_ho": "Bot xưng 'em', gọi khách 'anh/chị'",
+    "giong": "Thân thiện, nhiệt tình, sang trọng đúng chất boutique, không rẻ tiền",
+    "do_dai": "2-4 câu, dễ đọc trên điện thoại",
+    "luon_co": "1 giá trị + 1 lời mời hành động (tham quan/tập thử/để SĐT)",
+    "tranh": "Xin lỗi vì giá, hứa điều không có, dùng từ chuyên môn nặng",
+    "emoji": "Dùng vừa phải: 🦊 💪 🔥 🎁"
+  },
+  "faq": [
+    { "keywords": ["giá", "bao nhiêu", "học phí", "phí", "gói", "báo giá"], "intent": "gia", "answer": "Dạ Foxfit có các gói từ 1 tháng 600k tới 36 tháng. Gói 12 tháng 3.800k được tặng thêm 2 tháng + khăn xịn ạ 🎁. Anh/chị muốn em gửi bảng giá đầy đủ hay tư vấn gói hợp mục tiêu của mình nha?" },
+    { "keywords": ["mấy giờ", "giờ mở", "giờ giấc", "mở cửa", "đóng cửa"], "intent": "gio", "answer": "Phòng mở cửa 【ĐIỀN giờ】 ạ, mình lại có chính sách không giới hạn thời gian tập nữa 💪" },
+    { "keywords": ["ở đâu", "địa chỉ", "chỗ nào", "đường", "map", "chỉ đường"], "intent": "diachi", "answer": "Foxfit ở 【ĐIỀN địa chỉ】 ạ. Anh/chị cần em gửi link chỉ đường không?" },
+    { "keywords": ["pt", "huấn luyện", "hlv", "kèm", "1 kèm 1", "personal trainer"], "intent": "pt", "answer": "Dạ Foxfit có HLV chuyên nghiệp đồng hành ạ. Anh/chị để lại SĐT em xếp buổi tư vấn với HLV cho phù hợp mục tiêu nha." },
+    { "keywords": ["sauna", "xông hơi", "xông"], "intent": "sauna", "answer": "Dạ có sauna xông hơi, riêng dành cho nữ ạ 🧖‍♀️ Thư giãn sau buổi tập rất đã." },
+    { "keywords": ["đá lạnh", "ngâm đá", "ice bath", "ngâm lạnh"], "intent": "icebath", "answer": "Bên em có ngâm đá lạnh giúp giảm viêm khớp và phục hồi cơ nhanh sau tập ạ ❄️" },
+    { "keywords": ["chấn thương", "đau", "rehab", "phục hồi", "giãn cơ"], "intent": "rehab", "answer": "Foxfit có dịch vụ sport rehab hỗ trợ giãn cơ và phục hồi chấn thương ạ. Nếu chấn thương nặng anh/chị nên hỏi bác sĩ trước, rồi tụi em hỗ trợ phục hồi cùng nha 🙏" },
+    { "keywords": ["máy lạnh", "nóng", "quạt", "điều hòa", "mát"], "intent": "khongkhi", "answer": "Khu tập có máy lạnh ạ, ai không thích lạnh thì có quạt tản nhiệt, tập rất thoải mái." },
+    { "keywords": ["tặng", "quà", "khăn", "ưu đãi", "khuyến mãi"], "intent": "qua", "answer": "Đăng ký gói Members được tặng khăn xịn ạ 🎁. Gói dài từ 12 tháng còn được tặng thêm tháng tập nữa nha." },
+    { "keywords": ["đặc biệt", "khác gì", "khác gym", "nổi bật", "có gì"], "intent": "khacbiet", "answer": "Foxfit là boutique wellness club nên ngoài phòng tập máy lạnh còn có sauna (cho nữ), ngâm đá lạnh phục hồi và sport rehab ạ 🦊 Trải nghiệm khác hẳn gym thường." },
+    { "keywords": ["nữ", "con gái", "phụ nữ", "to cơ", "thô"], "intent": "nu", "answer": "Nữ tập rất hợp ở Foxfit ạ 🙆‍♀️ Tập tạ giúp săn chắc thon gọn chứ không 'to' đâu, xong còn có sauna riêng cho nữ thư giãn nữa." },
+    { "keywords": ["mới", "chưa tập", "người mới", "lần đầu"], "intent": "moi", "answer": "Không sao ạ, rất nhiều bạn bắt đầu từ số 0 😄 Có HLV hướng dẫn buổi đầu nên anh/chị yên tâm. Ghé tập thử 1 buổi cho quen nha?" },
+    { "keywords": ["đăng ký", "tập thử", "tham quan", "để lại", "sđt", "số điện thoại", "book", "hẹn"], "intent": "chot", "answer": "Dạ anh/chị để lại SĐT hoặc ghé trực tiếp, em giữ ưu đãi và xếp buổi tham quan/tập thử cho mình nha 👍" }
+  ],
+  "handoff_triggers": ["chuyển khoản", "đóng tiền", "lấy gói", "ký hợp đồng", "khiếu nại", "phàn nàn"],
+  "handoff_message": "Dạ để em chuyển anh/chị qua tư vấn viên hỗ trợ kỹ hơn nha, mình chờ chút xíu ạ 🙏"
+}
