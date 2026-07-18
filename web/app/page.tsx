@@ -3,8 +3,9 @@ import { HeroMotion, PhotoMotion, Reveal } from "./Motion";
 import { HeroSlideshow } from "./HeroSlideshow";
 
 export const metadata: Metadata = {
-  title: "Foxfit | Boutique Wellness Club",
-  description: "Không gian luyện tập riêng tư dành cho phụ nữ. Mạnh mẽ, rạng rỡ và tự tin theo cách của bạn.",
+  title: "Phòng tập nữ tại Vũng Tàu | Foxfit Wellness Club",
+  description: "Foxfit là phòng tập nữ boutique tại 43 Lê Phụng Hiểu, Vũng Tàu. Tập sức mạnh, cardio và mobility với huấn luyện viên theo sát.",
+  alternates: { canonical: "/" },
 };
 
 const coaches = [
