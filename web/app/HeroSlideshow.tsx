@@ -27,7 +27,7 @@ export function HeroSlideshow() {
           key={heroImages[active].src}
           src={heroImages[active].src}
           alt={heroImages[active].alt}
-          initial={reduce ? false : { opacity: 0, scale: 1.035 }}
+          initial={reduce ? false : { opacity: 0, scale: 1.045 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: reduce ? 0 : 1.05, ease: [0.16, 1, 0.3, 1] }}
