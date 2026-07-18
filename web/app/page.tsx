@@ -36,6 +36,10 @@ const structuredData = {
       telephone: "+84586757779",
       email: "foxfit43lephunghieu@gmail.com",
       address: { "@type": "PostalAddress", streetAddress: "43 Lê Phụng Hiểu", addressLocality: "Vũng Tàu", postalCode: "790000", addressCountry: "VN" },
+      employee: [
+        { "@type": "Person", name: "Huyền Trân", jobTitle: "Lễ tân" },
+        { "@type": "Person", name: "Phương Thảo", jobTitle: "Lễ tân" },
+      ],
       hasMap: mapsPage,
       sameAs: [facebookPage],
     },
@@ -134,7 +138,7 @@ export default function Home() {
     <section className="finalCta" id="membership"><div className="finalPhoto"><img src="/foxfit-brand-wall.png" alt="Logo Foxfit tại câu lạc bộ" /></div><Reveal className="finalCopy"><p>Buổi tập đầu tiên</p><h2>Bắt đầu bằng<br />một cuộc hẹn.</h2><span>Trải nghiệm không gian, gặp huấn luyện viên và nhận tư vấn lộ trình phù hợp.</span><div className="membershipBenefits"><b>01 buổi tập thử</b><b>Đánh giá thể trạng</b><b>Tư vấn lộ trình</b></div><a className="button buttonPrimary" href={facebookPage} target="_blank" rel="noreferrer">Đăng ký tập thử miễn phí</a></Reveal></section>
 
     <section className="locationSection" id="location"><div className="shell locationGrid">
-      <Reveal className="locationCopy"><p>Foxfit Vũng Tàu</p><h2>Ghé Foxfit.<br />Bắt đầu hành trình.</h2><address>43 Lê Phụng Hiểu, Vũng Tàu, Việt Nam 790000</address><div className="locationContact"><a href="tel:+84586757779">058 675 7779</a><a href="mailto:foxfit43lephunghieu@gmail.com">foxfit43lephunghieu@gmail.com</a></div><a className="button buttonPrimary" href={mapsPage} target="_blank" rel="noreferrer">Mở chỉ đường Google Maps</a></Reveal>
+      <Reveal className="locationCopy"><p>Foxfit Vũng Tàu</p><h2>Ghé Foxfit.<br />Bắt đầu hành trình.</h2><address>43 Lê Phụng Hiểu, Vũng Tàu, Việt Nam 790000</address><div className="receptionTeam"><span>Lễ tân</span><b>Huyền Trân</b><b>Phương Thảo</b></div><div className="locationContact"><a href="tel:+84586757779">058 675 7779</a><a href="mailto:foxfit43lephunghieu@gmail.com">foxfit43lephunghieu@gmail.com</a></div><a className="button buttonPrimary" href={mapsPage} target="_blank" rel="noreferrer">Mở chỉ đường Google Maps</a></Reveal>
       <Reveal className="locationMap" delay={.06}><iframe src="https://www.google.com/maps?q=Foxfit%20Wellness%20Club%2C%2043%20L%C3%AA%20Ph%E1%BB%A5ng%20Hi%E1%BB%83u%2C%20V%C5%A9ng%20T%C3%A0u&output=embed" title="Bản đồ đến Foxfit Wellness Club tại 43 Lê Phụng Hiểu, Vũng Tàu" loading="lazy" referrerPolicy="no-referrer-when-downgrade" allowFullScreen /></Reveal>
     </div></section>
 
