@@ -1,6 +1,6 @@
 "use client";
 
-import { AnimatePresence, motion } from "motion/react";
+import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { useEffect, useState } from "react";
 
 const heroImages = [
@@ -12,11 +12,13 @@ const heroImages = [
 
 export function HeroSlideshow() {
   const [active, setActive] = useState(0);
+  const reduce = useReducedMotion();
 
   useEffect(() => {
+    if (reduce) return;
     const timer = window.setInterval(() => setActive((current) => (current + 1) % heroImages.length), 4200);
     return () => window.clearInterval(timer);
-  }, []);
+  }, [reduce]);
 
   return (
     <div className="heroMedia" aria-label="Hình ảnh không gian Foxfit">
@@ -25,10 +27,10 @@ export function HeroSlideshow() {
           key={heroImages[active].src}
           src={heroImages[active].src}
           alt={heroImages[active].alt}
-          initial={{ opacity: 0, scale: 1.045 }}
+          initial={reduce ? false : { opacity: 0, scale: 1.035 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 1.05, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: reduce ? 0 : 1.05, ease: [0.16, 1, 0.3, 1] }}
         />
       </AnimatePresence>
       <div className="heroSlideNav" aria-label="Chọn ảnh đầu trang">

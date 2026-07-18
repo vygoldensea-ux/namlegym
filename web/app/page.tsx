@@ -65,12 +65,12 @@ export default function Home() {
     </section>
 
     <section className="promise shell">
-      <Reveal className="promiseTitle"><span>01 / FOXFIT PHILOSOPHY</span><h2>Một nơi để bạn<br />chọn chính mình.</h2><i>Wellness, on your terms.</i></Reveal>
+      <Reveal className="promiseTitle"><span>FOXFIT PHILOSOPHY</span><h2>Một nơi để bạn<br />chọn chính mình.</h2><i>Wellness, on your terms.</i></Reveal>
       <Reveal className="promiseBody" delay={.1}><p>Không phô trương, không áp lực. Foxfit kết hợp chuyên môn, sự riêng tư và một cộng đồng phụ nữ tích cực để mỗi buổi tập đều có mục tiêu rõ ràng.</p><div className="facts"><span><b>Riêng tư</b>Không gian boutique thoải mái</span><span><b>Cá nhân</b>Lộ trình theo thể trạng</span><span><b>Đồng hành</b>Huấn luyện viên theo sát</span></div></Reveal>
     </section>
 
     <section className="experience shell">
-      <Reveal className="experienceHead"><div><span>02 / THE FOXFIT EXPERIENCE</span><h2>Mọi chi tiết.<br />Một trải nghiệm tốt hơn.</h2></div><p>Từ không gian, thiết bị đến cách huấn luyện, Foxfit xây dựng một hành trình thoải mái, an toàn và hiệu quả cho phụ nữ.</p></Reveal>
+      <Reveal className="experienceHead"><div><span>THE FOXFIT EXPERIENCE</span><h2>Mọi chi tiết.<br />Một trải nghiệm tốt hơn.</h2></div><p>Từ không gian, thiết bị đến cách huấn luyện, Foxfit xây dựng một hành trình thoải mái, an toàn và hiệu quả cho phụ nữ.</p></Reveal>
       <div className="experienceGrid">
         <PhotoMotion className="experiencePhoto"><img src="/foxfit-reception.png" alt="Không gian boutique tại Foxfit" /></PhotoMotion>
         <Reveal className="benefit benefitOrange"><strong>01</strong><h3>Không gian riêng tư</h3><p>Tập trung vào chính mình trong môi trường kín đáo, sạch sẽ và vừa đủ yên tĩnh.</p></Reveal>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Be_Vietnam_Pro } from "next/font/google";
+import { ScrollProgress } from "./Motion";
 import "./globals.css";
 
 const bodyFont = Be_Vietnam_Pro({
@@ -38,7 +39,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="vi">
-      <body className={`${bodyFont.variable} ${gymHeading.variable}`}>{children}</body>
+      <body className={`${bodyFont.variable} ${gymHeading.variable}`}><ScrollProgress />{children}</body>
     </html>
   );
 }
