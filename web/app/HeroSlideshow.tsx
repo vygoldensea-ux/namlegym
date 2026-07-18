@@ -1,6 +1,7 @@
 "use client";
 
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const heroImages = [
@@ -23,15 +24,23 @@ export function HeroSlideshow() {
   return (
     <div className="heroMedia" aria-label="Hình ảnh không gian Foxfit">
       <AnimatePresence initial={false} mode="sync">
-        <motion.img
+        <motion.div
+          className="heroSlide"
           key={heroImages[active].src}
-          src={heroImages[active].src}
-          alt={heroImages[active].alt}
-          initial={reduce ? false : { opacity: 0, scale: 1.045 }}
+          initial={reduce ? false : { opacity: 0, scale: 1.025 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: reduce ? 0 : 1.05, ease: [0.16, 1, 0.3, 1] }}
-        />
+          transition={{ duration: reduce ? 0 : 0.62, ease: [0.16, 1, 0.3, 1] }}
+        >
+          <Image
+            src={heroImages[active].src}
+            alt={heroImages[active].alt}
+            fill
+            sizes="(max-width: 900px) 100vw, 58vw"
+            quality={82}
+            priority={active === 0}
+          />
+        </motion.div>
       </AnimatePresence>
       <div className="heroSlideNav" aria-label="Chọn ảnh đầu trang">
         {heroImages.map((image, index) => (

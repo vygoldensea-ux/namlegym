@@ -15,6 +15,7 @@ const coaches = [
 ];
 
 const facebookPage = "https://www.facebook.com/profile.php?id=61590679006037";
+const mapsPage = "https://maps.app.goo.gl/kpRJWSRDCtZL9iSVA";
 
 const faqs = [
   ["Foxfit có phù hợp với người mới tập không?", "Có. Huấn luyện viên sẽ trao đổi mục tiêu, kiểm tra thể trạng và hướng dẫn kỹ thuật từ những chuyển động cơ bản trước khi tăng cường độ."],
@@ -35,6 +36,7 @@ const structuredData = {
       telephone: "+84586757779",
       email: "foxfit43lephunghieu@gmail.com",
       address: { "@type": "PostalAddress", streetAddress: "43 Lê Phụng Hiểu", addressLocality: "Vũng Tàu", postalCode: "790000", addressCountry: "VN" },
+      hasMap: mapsPage,
       sameAs: [facebookPage],
     },
     {
@@ -131,6 +133,11 @@ export default function Home() {
 
     <section className="finalCta" id="membership"><div className="finalPhoto"><img src="/foxfit-brand-wall.png" alt="Logo Foxfit tại câu lạc bộ" /></div><Reveal className="finalCopy"><p>Buổi tập đầu tiên</p><h2>Bắt đầu bằng<br />một cuộc hẹn.</h2><span>Trải nghiệm không gian, gặp huấn luyện viên và nhận tư vấn lộ trình phù hợp.</span><div className="membershipBenefits"><b>01 buổi tập thử</b><b>Đánh giá thể trạng</b><b>Tư vấn lộ trình</b></div><a className="button buttonPrimary" href={facebookPage} target="_blank" rel="noreferrer">Đăng ký tập thử miễn phí</a></Reveal></section>
 
-    <footer className="footer shell"><a className="brand footerBrand" href="#top"><img src="/foxfit-logo-transparent.png" alt="Foxfit" /></a><address className="footerContact"><span>43 Lê Phụng Hiểu, Vũng Tàu, Việt Nam 790000</span><a href="tel:+84586757779">058 675 7779</a><a href="mailto:foxfit43lephunghieu@gmail.com">foxfit43lephunghieu@gmail.com</a></address><div><a href="#classes">Bộ môn</a><a href="#coaches">Huấn luyện viên</a><a href="#schedule">Lịch tập</a><a href="/blog">Blog</a></div><small>© 2026 Foxfit Wellness Club</small></footer>
+    <section className="locationSection" id="location"><div className="shell locationGrid">
+      <Reveal className="locationCopy"><p>Foxfit Vũng Tàu</p><h2>Ghé Foxfit.<br />Bắt đầu hành trình.</h2><address>43 Lê Phụng Hiểu, Vũng Tàu, Việt Nam 790000</address><div className="locationContact"><a href="tel:+84586757779">058 675 7779</a><a href="mailto:foxfit43lephunghieu@gmail.com">foxfit43lephunghieu@gmail.com</a></div><a className="button buttonPrimary" href={mapsPage} target="_blank" rel="noreferrer">Mở chỉ đường Google Maps</a></Reveal>
+      <Reveal className="locationMap" delay={.06}><iframe src="https://www.google.com/maps?q=Foxfit%20Wellness%20Club%2C%2043%20L%C3%AA%20Ph%E1%BB%A5ng%20Hi%E1%BB%83u%2C%20V%C5%A9ng%20T%C3%A0u&output=embed" title="Bản đồ đến Foxfit Wellness Club tại 43 Lê Phụng Hiểu, Vũng Tàu" loading="lazy" referrerPolicy="no-referrer-when-downgrade" allowFullScreen /></Reveal>
+    </div></section>
+
+    <footer className="footer shell"><a className="brand footerBrand" href="#top"><img src="/foxfit-logo-transparent.png" alt="Foxfit" /></a><address className="footerContact"><a href={mapsPage} target="_blank" rel="noreferrer">43 Lê Phụng Hiểu, Vũng Tàu, Việt Nam 790000</a><a href="tel:+84586757779">058 675 7779</a><a href="mailto:foxfit43lephunghieu@gmail.com">foxfit43lephunghieu@gmail.com</a></address><div><a href="#classes">Bộ môn</a><a href="#coaches">Huấn luyện viên</a><a href="#schedule">Lịch tập</a><a href="/blog">Blog</a></div><small>© 2026 Foxfit Wellness Club</small></footer>
   </main>;
 }
