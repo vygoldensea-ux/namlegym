@@ -27,10 +27,10 @@ const structuredData = {
   "@graph": [
     {
       "@type": "HealthClub",
-      "@id": "https://foxfit-wellness-club.polite-ibex-0423.chatgpt.site/#business",
+      "@id": "https://namlegym.vercel.app/#business",
       name: "Foxfit Boutique Wellness Club",
-      url: "https://foxfit-wellness-club.polite-ibex-0423.chatgpt.site/",
-      image: "https://foxfit-wellness-club.polite-ibex-0423.chatgpt.site/foxfit-cardio.png",
+      url: "https://namlegym.vercel.app/",
+      image: "https://namlegym.vercel.app/foxfit-cardio.png",
       telephone: "+84586757779",
       email: "foxfit43lephunghieu@gmail.com",
       address: { "@type": "PostalAddress", streetAddress: "43 Lê Phụng Hiểu", addressLocality: "Vũng Tàu", postalCode: "790000", addressCountry: "VN" },

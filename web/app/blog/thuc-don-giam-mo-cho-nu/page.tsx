@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 export default function ArticlePage() {
-  const schema = { "@context": "https://schema.org", "@type": "Article", headline: "Thực đơn giảm mỡ cho nữ tập gym: ăn đủ để tiến bộ", description: metadata.description, image: "https://foxfit-wellness-club.polite-ibex-0423.chatgpt.site/blog/thuc-don-giam-mo-cho-nu.png", author: { "@type": "Organization", name: "Foxfit Boutique Wellness Club" }, datePublished: "2026-07-18", dateModified: "2026-07-18" };
+  const schema = { "@context": "https://schema.org", "@type": "Article", headline: "Thực đơn giảm mỡ cho nữ tập gym: ăn đủ để tiến bộ", description: metadata.description, image: "https://namlegym.vercel.app/blog/thuc-don-giam-mo-cho-nu.png", author: { "@type": "Organization", name: "Foxfit Boutique Wellness Club" }, datePublished: "2026-07-18", dateModified: "2026-07-18" };
   return <main className="articlePage"><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
     <header className="articleNav shell"><Link className="brand" href="/"><img src="/foxfit-logo-transparent.png" alt="Foxfit" /></Link><Link href="/blog">Tất cả bài viết</Link></header>
     <article><header className="articleHero shell"><p>Giảm mỡ / 9 phút đọc</p><h1>Thực đơn giảm mỡ cho nữ tập gym: ăn đủ để tiến bộ</h1><span>Giảm mỡ hiệu quả không đồng nghĩa với ăn càng ít càng tốt. Một kế hoạch phù hợp cần giúp bạn kiểm soát năng lượng mà vẫn đủ sức tập và hồi phục.</span></header>

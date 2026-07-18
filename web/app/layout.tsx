@@ -17,7 +17,7 @@ const gymHeading = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://foxfit-wellness-club.polite-ibex-0423.chatgpt.site"),
+  metadataBase: new URL("https://namlegym.vercel.app"),
   title: "Phòng tập nữ tại Vũng Tàu | Foxfit Wellness Club",
   description: "Foxfit là phòng tập nữ boutique tại 43 Lê Phụng Hiểu, Vũng Tàu. Tập sức mạnh, cardio và mobility với huấn luyện viên theo sát.",
   keywords: ["phòng tập nữ Vũng Tàu", "gym nữ Vũng Tàu", "huấn luyện viên cá nhân Vũng Tàu", "Foxfit"],
