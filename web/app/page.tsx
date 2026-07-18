@@ -28,7 +28,7 @@ export default function Home() {
       <div className="heroScrim" />
       <div className="heroContent shell"><HeroMotion className="heroCopy">
         <p className="kicker">Boutique Wellness Club</p>
-        <h1>Đẹp hơn khi<br /><strong>mạnh mẽ.</strong></h1>
+        <h1>Stronger<br /><strong>in every way.</strong></h1>
         <p className="heroLead">Không gian riêng tư để bạn tập đúng, khỏe hơn và tự tin trong chính cơ thể mình.</p>
         <div className="heroActions"><a className="button buttonPrimary" href={facebookPage} target="_blank" rel="noreferrer">Đăng ký tập thử</a><a className="textLink" href="#classes">Khám phá bộ môn</a></div>
       </HeroMotion></div>

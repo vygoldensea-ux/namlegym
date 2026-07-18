@@ -1,12 +1,15 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const gymDisplay = Montserrat({
+const gymDisplay = localFont({
   variable: "--font-gym",
   display: "swap",
-  subsets: ["latin", "vietnamese"],
-  weight: ["400", "500", "600", "700", "800", "900"],
+  src: [
+    { path: "./fonts/SFUFuturaRegular.TTF", weight: "400", style: "normal" },
+    { path: "./fonts/SFUFuturaBold.TTF", weight: "600", style: "normal" },
+    { path: "./fonts/SFUFuturaBold.TTF", weight: "800", style: "normal" },
+  ],
 });
 
 export const metadata: Metadata = {
