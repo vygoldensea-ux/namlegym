@@ -15,8 +15,37 @@ const coaches = [
 
 const facebookPage = "https://www.facebook.com/profile.php?id=61590679006037";
 
+const faqs = [
+  ["Foxfit có phù hợp với người mới tập không?", "Có. Huấn luyện viên sẽ trao đổi mục tiêu, kiểm tra thể trạng và hướng dẫn kỹ thuật từ những chuyển động cơ bản trước khi tăng cường độ."],
+  ["Phòng tập có dành riêng cho phụ nữ không?", "Foxfit xây dựng không gian boutique riêng tư, thân thiện và tập trung vào nhu cầu tập luyện, sức khỏe và sự tự tin của phụ nữ."],
+  ["Tôi có thể đăng ký tập thử trước khi tham gia không?", "Có. Bạn có thể đăng ký buổi tập thử để tham quan phòng tập, gặp huấn luyện viên và nhận tư vấn lộ trình phù hợp."],
+  ["Foxfit có những hình thức tập nào?", "Bạn có thể tập sức mạnh, cardio, HIIT, mobility, phục hồi và huấn luyện cá nhân theo mục tiêu giảm mỡ, tăng sức bền hoặc cải thiện vóc dáng."],
+];
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "HealthClub",
+      "@id": "https://foxfit-wellness-club.polite-ibex-0423.chatgpt.site/#business",
+      name: "Foxfit Boutique Wellness Club",
+      url: "https://foxfit-wellness-club.polite-ibex-0423.chatgpt.site/",
+      image: "https://foxfit-wellness-club.polite-ibex-0423.chatgpt.site/foxfit-cardio.png",
+      telephone: "+84586757779",
+      email: "foxfit43lephunghieu@gmail.com",
+      address: { "@type": "PostalAddress", streetAddress: "43 Lê Phụng Hiểu", addressLocality: "Vũng Tàu", postalCode: "790000", addressCountry: "VN" },
+      sameAs: [facebookPage],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: faqs.map(([question, answer]) => ({ "@type": "Question", name: question, acceptedAnswer: { "@type": "Answer", text: answer } })),
+    },
+  ],
+};
+
 export default function Home() {
   return <main id="top">
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
     <header className="siteNav shell">
       <a className="brand" href="#top" aria-label="Foxfit trang chủ"><img src="/foxfit-logo-transparent.png" alt="Foxfit Boutique Wellness Club" /></a>
       <nav aria-label="Điều hướng chính"><a href="#classes">Bộ môn</a><a href="#coaches">Huấn luyện viên</a><a href="#schedule">Lịch tập</a><a href="#membership">Hội viên</a></nav>
@@ -29,18 +58,18 @@ export default function Home() {
       <div className="heroContent shell"><HeroMotion className="heroCopy">
         <p className="kicker">Boutique Wellness Club</p>
         <h1>Stronger<br /><strong>in every way.</strong></h1>
-        <p className="heroLead">Không gian riêng tư để bạn tập đúng, khỏe hơn và tự tin trong chính cơ thể mình.</p>
+        <p className="heroLead">Phòng tập nữ boutique tại Vũng Tàu, nơi bạn được hướng dẫn đúng kỹ thuật, theo sát lộ trình và tự tin tiến bộ theo nhịp riêng.</p>
         <div className="heroActions"><a className="button buttonPrimary" href={facebookPage} target="_blank" rel="noreferrer">Đăng ký tập thử</a><a className="textLink" href="#classes">Khám phá bộ môn</a></div>
       </HeroMotion></div>
     </section>
 
     <section className="promise shell">
-      <Reveal className="promiseTitle"><span>FOX</span><h2>Một nơi để<br />bạn chọn mình.</h2></Reveal>
-      <Reveal className="promiseBody" delay={.1}><p>Không phô trương. Không áp lực. Chỉ có chuyên môn, sự riêng tư và một cộng đồng phụ nữ cùng tiến về phía trước.</p><div className="facts"><span><b>Riêng tư</b>Không gian boutique</span><span><b>Cá nhân</b>Lộ trình phù hợp</span><span><b>Đồng hành</b>Huấn luyện sát sao</span></div></Reveal>
+      <Reveal className="promiseTitle"><span>01 / FOXFIT PHILOSOPHY</span><h2>Một nơi để bạn<br />chọn chính mình.</h2><i>Wellness, on your terms.</i></Reveal>
+      <Reveal className="promiseBody" delay={.1}><p>Không phô trương, không áp lực. Foxfit kết hợp chuyên môn, sự riêng tư và một cộng đồng phụ nữ tích cực để mỗi buổi tập đều có mục tiêu rõ ràng.</p><div className="facts"><span><b>Riêng tư</b>Không gian boutique thoải mái</span><span><b>Cá nhân</b>Lộ trình theo thể trạng</span><span><b>Đồng hành</b>Huấn luyện viên theo sát</span></div></Reveal>
     </section>
 
     <section className="experience shell">
-      <Reveal className="experienceHead"><h2>Mọi chi tiết đều dành cho trải nghiệm tập luyện tốt hơn.</h2><p>Từ không gian, thiết bị đến cách huấn luyện, Foxfit xây dựng một hành trình thoải mái và hiệu quả cho phụ nữ.</p></Reveal>
+      <Reveal className="experienceHead"><div><span>02 / THE FOXFIT EXPERIENCE</span><h2>Mọi chi tiết.<br />Một trải nghiệm tốt hơn.</h2></div><p>Từ không gian, thiết bị đến cách huấn luyện, Foxfit xây dựng một hành trình thoải mái, an toàn và hiệu quả cho phụ nữ.</p></Reveal>
       <div className="experienceGrid">
         <PhotoMotion className="experiencePhoto"><img src="/foxfit-reception.png" alt="Không gian boutique tại Foxfit" /></PhotoMotion>
         <Reveal className="benefit benefitOrange"><strong>01</strong><h3>Không gian riêng tư</h3><p>Tập trung vào chính mình trong môi trường kín đáo, sạch sẽ và vừa đủ yên tĩnh.</p></Reveal>
@@ -93,6 +122,11 @@ export default function Home() {
       <Reveal className="communityCopy"><p>Cộng đồng Foxfit</p><h2>Cùng nhau khỏe hơn, tự tin hơn.</h2><span>Tại Foxfit, mỗi bước tiến đều được ghi nhận. Bạn có thể bắt đầu chậm, nhưng không bao giờ phải bắt đầu một mình.</span><a className="textLink" href={facebookPage} target="_blank" rel="noreferrer">Trở thành hội viên Foxfit</a></Reveal>
       <PhotoMotion className="communityPhoto"><img src="/foxfit-strength.png" alt="Cộng đồng tập luyện tại Foxfit" /></PhotoMotion>
     </div></section>
+
+    <section className="faqSection shell" id="faq">
+      <Reveal className="faqHead"><p>Thông tin trước khi bắt đầu</p><h2>Bạn hỏi.<br />Foxfit trả lời.</h2><span>Những điều hội viên mới thường quan tâm trước buổi tập đầu tiên tại Foxfit Vũng Tàu.</span></Reveal>
+      <div className="faqList">{faqs.map(([question, answer], index) => <Reveal className="faqItem" delay={index * .04} key={question}><span>0{index + 1}</span><div><h3>{question}</h3><p>{answer}</p></div></Reveal>)}</div>
+    </section>
 
     <section className="finalCta" id="membership"><div className="finalPhoto"><img src="/foxfit-brand-wall.png" alt="Logo Foxfit tại câu lạc bộ" /></div><Reveal className="finalCopy"><p>Buổi tập đầu tiên</p><h2>Bắt đầu bằng<br />một cuộc hẹn.</h2><span>Trải nghiệm không gian, gặp huấn luyện viên và nhận tư vấn lộ trình phù hợp.</span><div className="membershipBenefits"><b>01 buổi tập thử</b><b>Đánh giá thể trạng</b><b>Tư vấn lộ trình</b></div><a className="button buttonPrimary" href={facebookPage} target="_blank" rel="noreferrer">Đăng ký tập thử miễn phí</a></Reveal></section>
 

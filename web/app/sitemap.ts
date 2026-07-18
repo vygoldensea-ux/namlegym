@@ -1,0 +1,10 @@
+import type { MetadataRoute } from "next";
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  return [{
+    url: "https://foxfit-wellness-club.polite-ibex-0423.chatgpt.site/",
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 1,
+  }];
+}
