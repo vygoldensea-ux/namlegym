@@ -48,7 +48,7 @@ export default function Home() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
     <header className="siteNav shell">
       <a className="brand" href="#top" aria-label="Foxfit trang chủ"><img src="/foxfit-logo-transparent.png" alt="Foxfit Boutique Wellness Club" /></a>
-      <nav aria-label="Điều hướng chính"><a href="#classes">Bộ môn</a><a href="#coaches">Huấn luyện viên</a><a href="#schedule">Lịch tập</a><a href="#membership">Hội viên</a></nav>
+      <nav aria-label="Điều hướng chính"><a href="#classes">Bộ môn</a><a href="#coaches">Huấn luyện viên</a><a href="#schedule">Lịch tập</a><a href="#membership">Hội viên</a><a href="/blog">Blog</a></nav>
       <a className="navCta" href={facebookPage} target="_blank" rel="noreferrer">Tập thử miễn phí</a>
     </header>
 
@@ -59,7 +59,7 @@ export default function Home() {
         <p className="kicker">Boutique Wellness Club</p>
         <h1>Stronger<br /><strong>in every way.</strong></h1>
         <p className="heroLead">Phòng tập nữ boutique tại Vũng Tàu, nơi bạn được hướng dẫn đúng kỹ thuật, theo sát lộ trình và tự tin tiến bộ theo nhịp riêng.</p>
-        <div className="heroActions"><a className="button buttonPrimary" href={facebookPage} target="_blank" rel="noreferrer">Đăng ký tập thử</a><a className="textLink" href="#classes">Khám phá bộ môn</a></div>
+        <div className="heroActions"><a className="button buttonPrimary" href={facebookPage} target="_blank" rel="noreferrer">Đăng ký tập thử</a><a className="button buttonGhost" href="#classes">Khám phá bộ môn</a></div>
       </HeroMotion></div>
     </section>
 
@@ -130,6 +130,6 @@ export default function Home() {
 
     <section className="finalCta" id="membership"><div className="finalPhoto"><img src="/foxfit-brand-wall.png" alt="Logo Foxfit tại câu lạc bộ" /></div><Reveal className="finalCopy"><p>Buổi tập đầu tiên</p><h2>Bắt đầu bằng<br />một cuộc hẹn.</h2><span>Trải nghiệm không gian, gặp huấn luyện viên và nhận tư vấn lộ trình phù hợp.</span><div className="membershipBenefits"><b>01 buổi tập thử</b><b>Đánh giá thể trạng</b><b>Tư vấn lộ trình</b></div><a className="button buttonPrimary" href={facebookPage} target="_blank" rel="noreferrer">Đăng ký tập thử miễn phí</a></Reveal></section>
 
-    <footer className="footer shell"><a className="brand footerBrand" href="#top"><img src="/foxfit-logo-transparent.png" alt="Foxfit" /></a><address className="footerContact"><span>43 Lê Phụng Hiểu, Vũng Tàu, Việt Nam 790000</span><a href="tel:+84586757779">058 675 7779</a><a href="mailto:foxfit43lephunghieu@gmail.com">foxfit43lephunghieu@gmail.com</a></address><div><a href="#classes">Bộ môn</a><a href="#coaches">Huấn luyện viên</a><a href="#schedule">Lịch tập</a></div><small>© 2026 Foxfit Wellness Club</small></footer>
+    <footer className="footer shell"><a className="brand footerBrand" href="#top"><img src="/foxfit-logo-transparent.png" alt="Foxfit" /></a><address className="footerContact"><span>43 Lê Phụng Hiểu, Vũng Tàu, Việt Nam 790000</span><a href="tel:+84586757779">058 675 7779</a><a href="mailto:foxfit43lephunghieu@gmail.com">foxfit43lephunghieu@gmail.com</a></address><div><a href="#classes">Bộ môn</a><a href="#coaches">Huấn luyện viên</a><a href="#schedule">Lịch tập</a><a href="/blog">Blog</a></div><small>© 2026 Foxfit Wellness Club</small></footer>
   </main>;
 }

@@ -1,15 +1,13 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Be_Vietnam_Pro } from "next/font/google";
 import "./globals.css";
 
-const gymDisplay = localFont({
+const bodyFont = Be_Vietnam_Pro({
   variable: "--font-gym",
   display: "swap",
-  src: [
-    { path: "./fonts/SFUFuturaRegular.TTF", weight: "400", style: "normal" },
-    { path: "./fonts/SFUFuturaBold.TTF", weight: "600", style: "normal" },
-    { path: "./fonts/SFUFuturaBold.TTF", weight: "800", style: "normal" },
-  ],
+  subsets: ["vietnamese"],
+  weight: ["400", "500", "600", "700"],
 });
 
 const gymHeading = localFont({
@@ -40,7 +38,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="vi">
-      <body className={`${gymDisplay.variable} ${gymHeading.variable}`}>{children}</body>
+      <body className={`${bodyFont.variable} ${gymHeading.variable}`}>{children}</body>
     </html>
   );
 }
