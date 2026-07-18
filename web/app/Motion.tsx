@@ -1,0 +1,16 @@
+"use client";
+
+import { motion, MotionConfig } from "motion/react";
+import type { ReactNode } from "react";
+
+export function Reveal({children,className="",delay=0}:{children:ReactNode;className?:string;delay?:number}){
+  return <MotionConfig reducedMotion="never"><motion.div className={className} initial={{opacity:0,y:38}} whileInView={{opacity:1,y:0}} viewport={{once:true,amount:.16}} transition={{duration:.8,delay,ease:[.16,1,.3,1]}}>{children}</motion.div></MotionConfig>;
+}
+
+export function HeroMotion({children,className="",delay=0}:{children:ReactNode;className?:string;delay?:number}){
+  return <MotionConfig reducedMotion="never"><motion.div className={className} initial={{opacity:0,y:34}} animate={{opacity:1,y:0}} transition={{duration:1,delay,ease:[.16,1,.3,1]}}>{children}</motion.div></MotionConfig>;
+}
+
+export function PhotoMotion({children,className=""}:{children:ReactNode;className?:string}){
+  return <MotionConfig reducedMotion="never"><motion.div className={className} initial={{opacity:.25,scale:1.045}} whileInView={{opacity:1,scale:1}} viewport={{once:true,amount:.1}} transition={{duration:1.15,ease:[.16,1,.3,1]}}>{children}</motion.div></MotionConfig>;
+}
