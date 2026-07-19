@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { HeroMotion, PhotoMotion, Reveal } from "./Motion";
 import { HeroSlideshow } from "./HeroSlideshow";
 
@@ -8,10 +9,11 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
 };
 
-const coaches = [
-  ["Ngọc Anh", "Sức mạnh và hình thể", "Lộ trình rõ ràng, kỹ thuật chuẩn, tiến bộ bền vững."],
-  ["Minh Thư", "HIIT và cardio", "Năng lượng tích cực trong từng buổi tập."],
-  ["Thu Hà", "Mobility và phục hồi", "Chuyển động linh hoạt, cơ thể nhẹ nhàng hơn."],
+const team = [
+  { name: "Wendy", role: "Foxfit", image: "/team-wendy.png", position: "center 28%" },
+  { name: "Huyền Trân", role: "Lễ tân", image: "/team-huyen-tran.png", position: "center 32%" },
+  { name: "Quỳnh Nga", role: "PT", image: "/team-quynh-nga.png", position: "center 35%" },
+  { name: "Hải Trần", role: "PT", image: "/team-hai-tran.png", position: "center 42%" },
 ];
 
 const facebookPage = "https://www.facebook.com/profile.php?id=61590679006037";
@@ -37,8 +39,10 @@ const structuredData = {
       email: "foxfit43lephunghieu@gmail.com",
       address: { "@type": "PostalAddress", streetAddress: "43 Lê Phụng Hiểu", addressLocality: "Vũng Tàu", postalCode: "790000", addressCountry: "VN" },
       employee: [
+        { "@type": "Person", name: "Wendy" },
         { "@type": "Person", name: "Huyền Trân", jobTitle: "Lễ tân" },
-        { "@type": "Person", name: "Phương Thảo", jobTitle: "Lễ tân" },
+        { "@type": "Person", name: "Quỳnh Nga", jobTitle: "Huấn luyện viên cá nhân" },
+        { "@type": "Person", name: "Hải Trần", jobTitle: "Huấn luyện viên cá nhân" },
       ],
       hasMap: mapsPage,
       sameAs: [facebookPage],
@@ -55,7 +59,7 @@ export default function Home() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
     <header className="siteNav shell">
       <a className="brand" href="#top" aria-label="Foxfit trang chủ"><img src="/foxfit-logo-transparent.png" alt="Foxfit Boutique Wellness Club" /></a>
-      <nav aria-label="Điều hướng chính"><a href="#classes">Bộ môn</a><a href="#coaches">Huấn luyện viên</a><a href="#schedule">Lịch tập</a><a href="#membership">Hội viên</a><a href="/blog">Blog</a></nav>
+      <nav aria-label="Điều hướng chính"><a href="#classes">Bộ môn</a><a href="#coaches">Đội ngũ</a><a href="#schedule">Lịch tập</a><a href="#membership">Hội viên</a><a href="/blog">Blog</a></nav>
       <a className="navCta" href={facebookPage} target="_blank" rel="noreferrer">Tập thử miễn phí</a>
     </header>
 
@@ -101,18 +105,18 @@ export default function Home() {
       <div className="spaceCopy shell"><Reveal><p>Được thiết kế cho phụ nữ</p><h2>Thoải mái từ<br />khoảnh khắc đầu tiên.</h2><span>Phòng tập sáng, thoáng và riêng tư. Khu chức năng được bố trí để bạn di chuyển thuận tiện trong suốt buổi tập.</span></Reveal></div>
     </section>
 
-    <section className="coachSection shell" id="coaches">
-      <Reveal className="coachIntro"><h2>Người hiểu cơ thể bạn.</h2><p>Đội ngũ Foxfit đặt kỹ thuật, sự an toàn và trải nghiệm cá nhân lên trước mọi con số.</p></Reveal>
-      <div className="coachList">{coaches.map((coach,index)=><Reveal className="coachRow" delay={index*.06} key={coach[0]}><span className="coachIndex">0{index+1}</span><h3>{coach[0]}</h3><p><b>{coach[1]}</b>{coach[2]}</p><span className="coachMark">Foxfit</span></Reveal>)}</div>
+    <section className="teamSection shell" id="coaches">
+      <Reveal className="teamIntro"><p>Đội ngũ Foxfit</p><h2>Những người đồng hành cùng bạn.</h2><span>Từ lời chào đầu tiên đến từng buổi tập, đội ngũ Foxfit luôn sẵn sàng lắng nghe và hỗ trợ.</span></Reveal>
+      <div className="teamGrid">{team.map((member,index)=><Reveal className="teamCard" delay={index*.05} key={member.name}><div className="teamPhoto"><Image src={member.image} alt={`${member.name}, ${member.role} tại Foxfit`} fill sizes="(max-width: 700px) 100vw, (max-width: 1000px) 50vw, 25vw" quality={90} style={{objectPosition:member.position}} /></div><div className="teamMeta"><span>{member.role}</span><h3>{member.name}</h3></div></Reveal>)}</div>
     </section>
 
     <section className="scheduleSection" id="schedule"><div className="shell scheduleGrid">
       <Reveal className="scheduleTitle"><h2>Một tuần<br />đầy năng lượng.</h2><p>Chọn khung giờ phù hợp và để Foxfit đồng hành cùng bạn.</p></Reveal>
       <div className="sessions">
-        <Reveal className="session"><time>06:30</time><div><h3>Sức mạnh buổi sáng</h3><p>Ngọc Anh, Studio A</p></div><a href={facebookPage} target="_blank" rel="noreferrer">Đặt chỗ</a></Reveal>
-        <Reveal className="session" delay={.06}><time>12:00</time><div><h3>Power HIIT</h3><p>Minh Thư, Khu cardio</p></div><a href={facebookPage} target="_blank" rel="noreferrer">Đặt chỗ</a></Reveal>
-        <Reveal className="session" delay={.12}><time>18:30</time><div><h3>Mobility phục hồi</h3><p>Thu Hà, Studio B</p></div><a href={facebookPage} target="_blank" rel="noreferrer">Đặt chỗ</a></Reveal>
-        <Reveal className="session" delay={.18}><time>19:30</time><div><h3>Body Sculpt</h3><p>Ngọc Anh, Studio A</p></div><a href={facebookPage} target="_blank" rel="noreferrer">Đặt chỗ</a></Reveal>
+        <Reveal className="session"><time>06:30</time><div><h3>Sức mạnh buổi sáng</h3><p>Quỳnh Nga, Studio A</p></div><a href={facebookPage} target="_blank" rel="noreferrer">Đặt chỗ</a></Reveal>
+        <Reveal className="session" delay={.06}><time>12:00</time><div><h3>Power HIIT</h3><p>Hải Trần, Khu cardio</p></div><a href={facebookPage} target="_blank" rel="noreferrer">Đặt chỗ</a></Reveal>
+        <Reveal className="session" delay={.12}><time>18:30</time><div><h3>Mobility phục hồi</h3><p>Quỳnh Nga, Studio B</p></div><a href={facebookPage} target="_blank" rel="noreferrer">Đặt chỗ</a></Reveal>
+        <Reveal className="session" delay={.18}><time>19:30</time><div><h3>Body Sculpt</h3><p>Hải Trần, Studio A</p></div><a href={facebookPage} target="_blank" rel="noreferrer">Đặt chỗ</a></Reveal>
       </div>
     </div></section>
 
@@ -138,10 +142,10 @@ export default function Home() {
     <section className="finalCta" id="membership"><div className="finalPhoto"><img src="/foxfit-brand-wall.png" alt="Logo Foxfit tại câu lạc bộ" /></div><Reveal className="finalCopy"><p>Buổi tập đầu tiên</p><h2>Bắt đầu bằng<br />một cuộc hẹn.</h2><span>Trải nghiệm không gian, gặp huấn luyện viên và nhận tư vấn lộ trình phù hợp.</span><div className="membershipBenefits"><b>01 buổi tập thử</b><b>Đánh giá thể trạng</b><b>Tư vấn lộ trình</b></div><a className="button buttonPrimary" href={facebookPage} target="_blank" rel="noreferrer">Đăng ký tập thử miễn phí</a></Reveal></section>
 
     <section className="locationSection" id="location"><div className="shell locationGrid">
-      <Reveal className="locationCopy"><p>Foxfit Vũng Tàu</p><h2>Ghé Foxfit.<br />Bắt đầu hành trình.</h2><address>43 Lê Phụng Hiểu, Vũng Tàu, Việt Nam 790000</address><div className="receptionTeam"><span>Lễ tân</span><b>Huyền Trân</b><b>Phương Thảo</b></div><div className="locationContact"><a href="tel:+84586757779">058 675 7779</a><a href="mailto:foxfit43lephunghieu@gmail.com">foxfit43lephunghieu@gmail.com</a></div><a className="button buttonPrimary" href={mapsPage} target="_blank" rel="noreferrer">Mở chỉ đường Google Maps</a></Reveal>
+      <Reveal className="locationCopy"><p>Foxfit Vũng Tàu</p><h2>Ghé Foxfit.<br />Bắt đầu hành trình.</h2><address>43 Lê Phụng Hiểu, Vũng Tàu, Việt Nam 790000</address><div className="receptionTeam"><span>Lễ tân</span><b>Huyền Trân</b></div><div className="locationContact"><a href="tel:+84586757779">058 675 7779</a><a href="mailto:foxfit43lephunghieu@gmail.com">foxfit43lephunghieu@gmail.com</a></div><a className="button buttonPrimary" href={mapsPage} target="_blank" rel="noreferrer">Mở chỉ đường Google Maps</a></Reveal>
       <Reveal className="locationMap" delay={.06}><iframe src="https://www.google.com/maps?q=Foxfit%20Wellness%20Club%2C%2043%20L%C3%AA%20Ph%E1%BB%A5ng%20Hi%E1%BB%83u%2C%20V%C5%A9ng%20T%C3%A0u&output=embed" title="Bản đồ đến Foxfit Wellness Club tại 43 Lê Phụng Hiểu, Vũng Tàu" loading="lazy" referrerPolicy="no-referrer-when-downgrade" allowFullScreen /></Reveal>
     </div></section>
 
-    <footer className="footer shell"><a className="brand footerBrand" href="#top"><img src="/foxfit-logo-transparent.png" alt="Foxfit" /></a><address className="footerContact"><a href={mapsPage} target="_blank" rel="noreferrer">43 Lê Phụng Hiểu, Vũng Tàu, Việt Nam 790000</a><a href="tel:+84586757779">058 675 7779</a><a href="mailto:foxfit43lephunghieu@gmail.com">foxfit43lephunghieu@gmail.com</a></address><div><a href="#classes">Bộ môn</a><a href="#coaches">Huấn luyện viên</a><a href="#schedule">Lịch tập</a><a href="/blog">Blog</a></div><small>© 2026 Foxfit Wellness Club</small></footer>
+    <footer className="footer shell"><a className="brand footerBrand" href="#top"><img src="/foxfit-logo-transparent.png" alt="Foxfit" /></a><address className="footerContact"><a href={mapsPage} target="_blank" rel="noreferrer">43 Lê Phụng Hiểu, Vũng Tàu, Việt Nam 790000</a><a href="tel:+84586757779">058 675 7779</a><a href="mailto:foxfit43lephunghieu@gmail.com">foxfit43lephunghieu@gmail.com</a></address><div><a href="#classes">Bộ môn</a><a href="#coaches">Đội ngũ</a><a href="#schedule">Lịch tập</a><a href="/blog">Blog</a></div><small>© 2026 Foxfit Wellness Club</small></footer>
   </main>;
 }
