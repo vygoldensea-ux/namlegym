@@ -35,7 +35,11 @@ Tin đến → **Tầng 0** (mẫu chào/giá/địa chỉ 0đ như hiện tại
 
 ## Vòng đời kho
 - Nguồn đáp án: câu bot đã trả sạch (qua guard) + chủ soạn/sửa; khởi động bằng cách đào lịch sử chat thật hiện có ("data xào").
-- Câu mới chỉ SỐNG sau khi chủ duyệt qua Telegram. Nhịp duyệt: GOM TUẦN 1 LẦN (không spam).
+- [SỬA 21/07 - chủ dự án đổi] TỰ HỌC KIỂU "HỌC VIỆC" (không ai duyệt tay, gom theo NGÀY):
+  1. Câu lặp >=3 lần từ >=2 khách khác nhau -> ỨNG VIÊN (chưa trả lời ai).
+  2. Các lần hỏi sau AI vẫn trả bình thường; hệ thống so câu AI trả với ứng viên.
+  3. Trùng nội dung 2 lần liên tiếp (cùng số liệu whitelist facts, không dính ngữ cảnh riêng/tên/ngày) -> tự thăng cấp active.
+  4. Lệch -> loại ứng viên. Báo cáo sáng liệt kê câu thăng cấp; chủ "xoá câu X" là gỡ ngay (hậu kiểm).
 - Xưng hô lưu {xh}, điền lúc gửi.
 - Sống vô hạn; chủ dạy kiến thức mới/đổi giá → XOÁ TOÀN BỘ kho (an toàn tuyệt đối). K (chủ dạy) luôn thắng cache.
 - Lệnh Telegram: "tắt cache" (về 100% AI ngay), "xoá cache", "xoá câu X".
