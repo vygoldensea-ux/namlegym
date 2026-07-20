@@ -23,6 +23,11 @@
 - PT 1:1 buổi lẻ: **500k/buổi, CÓ giãn cơ** (chỉ buổi trả phí này có giãn cơ; PT tặng kèm gói KHÔNG giãn cơ).
 - Gói PT dài hạn (nhiều buổi): KHÔNG báo giá qua chat — mời gặp quản lý. Không nhận PT ngoài.
 
+## Sauna / Xông hơi (chốt 20/07 sau case Kelly TrAn)
+- Sauna MIỄN PHÍ **chỉ** là quà tặng riêng của **gói 12 tháng**.
+- Mọi gói khác KHÔNG bao gồm sauna miễn phí — trả lời thẳng "chưa bao gồm".
+- Dùng sauna trả phí được không / giá bao nhiêu: **CHƯA có thông tin** — bot phải nói "để quản lý báo", cấm tự bịa (AI từng bịa cả "miễn phí mọi gói" lẫn "50k/buổi").
+
 ## Thông tin cơ sở
 - **Địa chỉ**: 43 Lê Phụng Hiếu, P. Tam Thắng, TP. Hồ Chí Minh — map: https://maps.app.goo.gl/kpRJWSRDCtZL9iSVA
 - **Giờ mở cửa**: 5h30 – 20h30. Chủ Nhật NGHỈ (bảo trì + vệ sinh).
