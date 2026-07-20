@@ -46,3 +46,9 @@ Tin đến → **Tầng 0** (mẫu chào/giá/địa chỉ 0đ như hiện tại
 - Test suite mở rộng thêm ~6 case cache (khớp đúng / lệch 1 từ phải qua AI / nhạy cảm / ngày giờ / xưng hô / lệnh xoá).
 - Golive: bật ngay sau khi test pass. 3 ngày sạch lỗi mới đóng case.
 - Báo cáo sáng thêm 1 dòng: số tin cache trả + tiền tiết kiệm.
+
+## TRẠNG THÁI TRIỂN KHAI (21/07 ~03:00)
+- ĐÃ CHẠY: bảng `foxfit_answer_cache` (21 câu active, chủ duyệt 21/07), luồng cache trong Za97w7TTm58atzFd: IF Spam → Load Cache → Match Cache → IF Cache Hit → (hit) Cho Cache 4 Giay → Chuan hoa Reply + Tang Hit Cache / (miss) IF Tang 1. Publish 11832ea2. Verify live: exec 973 hit (0 token, route=cache), exec 972 miss đúng luật.
+- Chuẩn hoá khớp (PHẢI đồng bộ mọi nơi): bỏ dấu → teencode (ko/k/hong→khong, bn/nhiu→bao nhieu, dc→duoc, sdt→so dien thoai, ntn→nhu the nao, j→gi) → bỏ filler {oi,nha,nhe,a,em,e,c,minh,ban,voi,vay,ha,hen,ne}. CẤM đưa da/chi/do/the/tu vào filler (trùng đá/chỉ/đồ/tủ sau bỏ dấu).
+- Công tắc tắt khẩn: chèn row question_norm='__tat_cache__' status=active → toàn bộ cache tắt (bot về 100% AI).
+- CÒN THIẾU (làm tiếp): lệnh Telegram "tắt cache/xoá cache/xoá câu X" trong Gop Data Boss + tự xoá cache khi teach; 6 test case cache trong test suite; dòng cache vào báo cáo sáng; thêm biến thể "cho chi tham khao chi phi ben"; HỎI CHỦ GYM: HLV nam hay nữ (facts chưa có, bot đang tự nói "PT nữ").
