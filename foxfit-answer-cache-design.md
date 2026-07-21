@@ -57,3 +57,18 @@ Tin đến → **Tầng 0** (mẫu chào/giá/địa chỉ 0đ như hiện tại
 - Chuẩn hoá khớp (PHẢI đồng bộ mọi nơi): bỏ dấu → teencode (ko/k/hong→khong, bn/nhiu→bao nhieu, dc→duoc, sdt→so dien thoai, ntn→nhu the nao, j→gi) → bỏ filler {oi,nha,nhe,a,em,e,c,minh,ban,voi,vay,ha,hen,ne}. CẤM đưa da/chi/do/the/tu vào filler (trùng đá/chỉ/đồ/tủ sau bỏ dấu).
 - Công tắc tắt khẩn: chèn row question_norm='__tat_cache__' status=active → toàn bộ cache tắt (bot về 100% AI).
 - CÒN THIẾU (làm tiếp): lệnh Telegram "tắt cache/xoá cache/xoá câu X" trong Gop Data Boss + tự xoá cache khi teach; 6 test case cache trong test suite; dòng cache vào báo cáo sáng; thêm biến thể "cho chi tham khao chi phi ben"; HỎI CHỦ GYM: HLV nam hay nữ (facts chưa có, bot đang tự nói "PT nữ").
+
+## VÙNG TẠM NGƯNG (chốt 10 câu với chủ dự án, 21/07 tối — đã golive)
+Triết lý: "thà chậm mà chuẩn" — rủi ro thì máy chỉ được IM hoặc TỰ SỬA, không được nói bậy.
+- SỬA DATA GỐC: 171 cặp hỏi-đáp lưu đảo thứ tự (di chứng race 2-POST) đã hoán vị bằng SQL 21/07 — nguồn bệnh "tưởng chưa trả lời nên trả lời lại" (case ping Ngocbich).
+- PING (2bWS3ugkh3cComfi, publish 8676b032):
+  - Lưới lặp vá lỗ tin-nhiều-đoạn (trước chỉ so DÒNG ĐẦU mỗi tin bot); ngưỡng trùng >60% từ so với TOÀN BỘ tin bot cũ.
+  - Tin nghi lặp → KHÔNG gửi, ghi `foxfit_ping_hold` (status=pending) → Claude duyệt lúc 9h (sửa rồi gửi tay/bỏ).
+  - Khung giờ ping 9h00-20h30 VN (gate trong Gop Lead). Công tắc: row `__tat_ping__` trong answer_cache.
+  - Ping lần 2 (~24h): CHỐT LÙI — bật sau nghiệm thu 23/07 (cột leads.ping2_at đã tạo sẵn).
+- INBOX (Za97w7TTm58atzFd, publish 7e5840e7):
+  - VÒNG 2 TỰ SỬA: chỉ khi guard kết luận "cả câu là đồ lặp" (chỗ cũ bắn CLARIFY) VÀ là đường AI → Build Vong 2 đẩy lại Claude kèm lý do bị chặn + draft → viết lại → qua đủ guard lần 2. Tối đa 1 vòng (cờ vong2). Node lỗi → rơi xuống fallback chain, không chết im.
+  - NẮP CLARIFY 1 LẦN/HỘI THOẠI: CLARIFY lần 2 trở đi tự đổi thành câu đẩy quản lý + hotline (escalated).
+  - Khách nhắn đến → node Huy Ping Hold tự huỷ (cancelled) tin chờ của khách đó.
+- TELEGRAM (IGI1jcdlSwOPB7D1, publish 66354995): "tắt ping" / "bật ping" / "xem chờ" (kèm bộ cache cũ).
+- Routine 9h thêm bước: đọc foxfit_ping_hold pending → duyệt; quét history tìm CLARIFY/escalate để dạy lại.
