@@ -39,7 +39,8 @@ Tin đến → **Tầng 0** (mẫu chào/giá/địa chỉ 0đ như hiện tại
   1. Câu lặp >=3 lần từ >=2 khách khác nhau -> ỨNG VIÊN (chưa trả lời ai).
   2. Các lần hỏi sau AI vẫn trả bình thường; hệ thống so câu AI trả với ứng viên.
   3. Trùng nội dung 2 lần liên tiếp (cùng số liệu whitelist facts, không dính ngữ cảnh riêng/tên/ngày) -> tự thăng cấp active.
-  4. Lệch -> loại ứng viên. Báo cáo sáng liệt kê câu thăng cấp; chủ "xoá câu X" là gỡ ngay (hậu kiểm).
+  4. Lệch -> loại ứng viên.
+  5. [THÊM 21/07 - chủ dự án chốt] Đậu vòng máy vẫn chỉ ở trạng thái PENDING — Claude duyệt tay từng câu khi mở phiên làm việc (đối chiếu facts + văn phong + ngữ cảnh) rồi mới active. Máy lọc bằng chứng, người lọc ngữ nghĩa. Báo cáo sáng hiện "N câu chờ duyệt"; chủ "xoá câu X" gỡ ngay (hậu kiểm).
 - Xưng hô lưu {xh}, điền lúc gửi.
 - Sống vô hạn; chủ dạy kiến thức mới/đổi giá → XOÁ TOÀN BỘ kho (an toàn tuyệt đối). K (chủ dạy) luôn thắng cache.
 - Lệnh Telegram: "tắt cache" (về 100% AI ngay), "xoá cache", "xoá câu X".
