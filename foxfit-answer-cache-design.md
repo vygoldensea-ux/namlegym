@@ -72,3 +72,9 @@ Triết lý: "thà chậm mà chuẩn" — rủi ro thì máy chỉ được IM 
   - Khách nhắn đến → node Huy Ping Hold tự huỷ (cancelled) tin chờ của khách đó.
 - TELEGRAM (IGI1jcdlSwOPB7D1, publish 66354995): "tắt ping" / "bật ping" / "xem chờ" (kèm bộ cache cũ).
 - Routine 9h thêm bước: đọc foxfit_ping_hold pending → duyệt; quét history tìm CLARIFY/escalate để dạy lại.
+
+## BỔ SUNG 21/07 tối muộn (case Dung Nguyen + digest, chủ duyệt)
+- Row #28 "gói không HLV/tự tập" (17 biến thể) + dòng facts GÓI KHÔNG HLV trong prompt: mọi gói Members là TỰ TẬP, giá không gồm PT — hết cảnh bí rồi xin lỗi cụt.
+- Row #30-33 "gói 1/3/6/12 tháng giá/KM bao nhiêu" (giá gốc→giá giảm + quà đúng gói) — phủ 2 câu digest hay hỏi nhất còn lọt AI.
+- Guard mới: khách cảm ơn/tạm biệt mà CHƯA cho số + chưa từ chối → câu chào kết tự kèm xin số nhẹ (được phép xin lần 2 ở thời điểm này). Publish fe657150, test sống pass.
+- TODO sáng 22/07: echo human-takeover (tin rep tay từ page → lưu vào history + bot im 30 phút với khách đó) — FB không có API "admin đang gõ" nên đây là cách đúng duy nhất.
