@@ -44,6 +44,7 @@
 - **Địa chỉ**: 43 Lê Phụng Hiếu, P. Tam Thắng, TP. Hồ Chí Minh — map: https://maps.app.goo.gl/kpRJWSRDCtZL9iSVA
 - **Giờ mở cửa**: 5h30 – 20h30. Chủ Nhật NGHỈ (bảo trì + vệ sinh).
 - **Hotline/Zalo**: 058 675 7779
+- **Website**: https://www.foxfit.vn (live 21/07/2026 — khách chốt qua web trong đợt khai trương được giữ giá như qua page)
 - **Đặc thù**: gym CHUYÊN NỮ (có kickboxing). Không nhận nam tập.
 
 ## NHỮNG NƠI PHẢI ĐỒNG BỘ KHI FILE NÀY THAY ĐỔI
