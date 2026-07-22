@@ -56,3 +56,7 @@
 ## Bổ sung 22/07 tối (chủ gym xác nhận)
 - INBODY: CÓ máy đo InBody tại phòng. Phí/miễn phí đo chưa chốt — không tự hứa miễn phí, chi tiết để quản lý tư vấn.
 - ƯU ĐÃI HSSV: KHÔNG có ưu đãi riêng — học sinh sinh viên hưởng chung ưu đãi khai trương như mọi khách, không ngoại lệ.
+
+## Bổ sung 22/07 khuya (rút từ PDF bảng giá PT của chủ — CHỈ lấy phần dịch vụ, KHÔNG lấy giá)
+- REHAB / SỬA DÁNG: CÓ lộ trình trị liệu sửa dáng chuyên sâu (dịch vụ PT) — khắc phục đau mỏi thắt lưng do lệch xương chậu (Lower Crossed), sửa gù lưng - cổ vai gáy - đầu đổ về trước (Upper Crossed), giải cơ bó SMR + kích hoạt cơ yếu, chuẩn NASM. Không tự báo giá rehab — thuộc dịch vụ PT.
+- LỘ TRÌNH GIẢM MỠ + DINH DƯỠNG: tập PT có kèm lộ trình ăn uống & tập luyện giảm mỡ chuẩn khoa học, HLV thiết kế riêng theo thể trạng. Không tự kê thực đơn chi tiết qua chat.

@@ -572,5 +572,43 @@
   ],
   "img": "",
   "status": "active"
+ },
+ {
+  "question_norm": "co sua dang khong",
+  "variants": [
+   "co dich vu sua dang khong",
+   "sua dang duoc khong",
+   "co tri lieu sua dang khong",
+   "gu lung co sua duoc khong",
+   "bi gu lung tap duoc khong",
+   "dau lung co tap duoc khong",
+   "dau co vai gay tap duoc khong",
+   "co rehab khong",
+   "co phuc hoi chan thuong khong",
+   "sai tu the co sua duoc khong",
+   "co sua tu the khong"
+  ],
+  "answers": [
+   "Dạ CÓ {xh} nha, bên em có lộ trình trị liệu sửa dáng chuyên sâu với HLV: khắc phục đau mỏi thắt lưng, sửa gù lưng - cổ vai gáy, giải cơ bó và kích hoạt cơ yếu theo chuẩn khoa học NASM ạ.\n\nMỗi người mỗi tình trạng khác nhau, {xh} ghé phòng để HLV đánh giá tư thế và lên lộ trình riêng, hoặc để lại SĐT anh quản lý tư vấn kỹ cho {xh} nha?"
+  ],
+  "img": "",
+  "status": "active"
+ },
+ {
+  "question_norm": "co tu van dinh duong khong",
+  "variants": [
+   "co meal plan khong",
+   "co che do an khong",
+   "co huong dan an uong khong",
+   "co lo trinh giam mo khong",
+   "giam mo co lo trinh khong",
+   "co tu van an uong khong",
+   "co ke hoach an uong khong"
+  ],
+  "answers": [
+   "Dạ có {xh} nha, tập PT bên em có luôn lộ trình ăn uống & tập luyện giảm mỡ chuẩn khoa học — HLV thiết kế chế độ dinh dưỡng và giáo án riêng theo thể trạng từng người ạ.\n\n{xh} đang muốn giảm mỡ hay cải thiện vóc dáng để em tư vấn hướng phù hợp ạ?"
+  ],
+  "img": "",
+  "status": "active"
  }
 ]
