@@ -1,0 +1,538 @@
+[
+ {
+  "question_norm": "gia sao",
+  "variants": [
+   "bang gia",
+   "chi phi bao nhieu",
+   "cho chi tham khao chi phi",
+   "cho chi tham khao chi phi ben",
+   "cho hoi chi phi",
+   "cho xin bang gia",
+   "cho xin bang gia day du cac goi tap",
+   "gia",
+   "gia bao nhieu",
+   "gia ca sao",
+   "gia nhieu",
+   "gia nhu the nao",
+   "gia the nao",
+   "gia tap ben sao",
+   "hoc phi bao nhieu",
+   "tham khao gia",
+   "xin gia",
+   "xin gia phong tap",
+   "gia tham khao",
+   "xin gia tham khao",
+   "cho xin gia tham khao",
+   "gia tap thang sao",
+   "gia tap thang",
+   "gia thang sao"
+  ],
+  "answers": [
+   "Dạ em gửi {xh} bảng giá gói Members nha.\n\n• Gói 1 tháng: 540k ạ\n• Gói 3 tháng: 1.233k ạ\n• Gói 6 tháng: 1.760k ạ\n• Gói 12 tháng: 3.040k ạ\n• Gói 18 tháng: 5.500k ạ\n• Gói 24 tháng: 6.500k ạ\n• Gói 36 tháng: 9.500k ạ\n\nĐang khai trương giảm 10-20% cho gói 1/3/6/12 tháng, mỗi gói có quà riêng ạ. {xh} tính tập gói mấy tháng để em tư vấn cho chuẩn ạ?",
+   "Dạ {xh} xem bảng giá đầy đủ bên em nha:\n\n• Gói 1 tháng: 540k ạ\n• Gói 3 tháng: 1.233k ạ\n• Gói 6 tháng: 1.760k ạ\n• Gói 12 tháng: 3.040k ạ\n• Gói 18 tháng: 5.500k ạ\n• Gói 24 tháng: 6.500k ạ\n• Gói 36 tháng: 9.500k ạ\n\nGiá trên đã áp ưu đãi khai trương (tới 03/08) ạ. {xh} quan tâm gói nào để em báo quà tặng riêng của gói đó nha?"
+  ],
+  "img": "banggia",
+  "status": "active"
+ },
+ {
+  "question_norm": "gia pt sao",
+  "variants": [
+   "gia goi pt",
+   "gia pt bao nhieu",
+   "phi pt",
+   "pt 1 2 gia sao",
+   "pt bao nhieu 1 buoi",
+   "pt gia sao",
+   "thue pt bao nhieu"
+  ],
+  "answers": [
+   "Dạ PT kèm riêng 1:1 buổi lẻ 500k/buổi, bao gồm cả giãn cơ luôn ạ.\n\nCòn gói PT dài hạn giá tốt hơn nhiều, {xh} cho em xin số điện thoại để anh quản lý tư vấn lộ trình phù hợp nhất cho mình nha?",
+   "Dạ bên em PT 1:1 buổi lẻ là 500k/buổi (gồm giãn cơ) ạ.\n\nGói PT dài hạn thì tuỳ lộ trình từng người, {xh} để lại số điện thoại để anh quản lý báo giá chi tiết cho mình nha?"
+  ],
+  "img": "",
+  "status": "active"
+ },
+ {
+  "question_norm": "dia chi o dau",
+  "variants": [
+   "cho nao",
+   "cho xin dia chi",
+   "dia chi",
+   "dia chi cua phong gym la dau",
+   "dia diem o dau",
+   "o dau",
+   "phong o dau"
+  ],
+  "answers": [
+   "Dạ Foxfit ở 43 Lê Phụng Hiếu, P. Tam Thắng, TP. Hồ Chí Minh {xh} nha.\n\nLink chỉ đường: https://maps.app.goo.gl/kpRJWSRDCtZL9iSVA\n\nEm gửi kèm hình mặt tiền để {xh} dễ nhận ra khi ghé ạ.",
+   "Dạ phòng em ở 43 Lê Phụng Hiếu, P. Tam Thắng, TP. Hồ Chí Minh ạ, map đây nha {xh}: https://maps.app.goo.gl/kpRJWSRDCtZL9iSVA\n\n{xh} ghé em gửi hình mặt tiền cho dễ tìm ạ."
+  ],
+  "img": "ngoaithat",
+  "status": "active"
+ },
+ {
+  "question_norm": "gio mo cua",
+  "variants": [
+   "gio giac sao",
+   "gio hoat dong",
+   "gio mo cua cua phong gym la gi",
+   "may gio dong cua",
+   "may gio mo cua",
+   "mo cua may gio"
+  ],
+  "answers": [
+   "Dạ phòng mở 5h30 sáng tới 20h30 tối {xh} ạ.\n\nRiêng Chủ nhật phòng nghỉ để bảo trì và vệ sinh ạ. {xh} hay tập khung giờ nào để em sắp xếp cho tiện?",
+   "Dạ bên em hoạt động 5h30 - 20h30 hằng ngày, Chủ nhật nghỉ bảo trì {xh} nha. {xh} định tập sáng hay tối ạ?"
+  ],
+  "img": "",
+  "status": "active"
+ },
+ {
+  "question_norm": "co khuyen mai gi khong",
+  "variants": [
+   "co chuong trinh gi khong",
+   "dang co uu dai gi",
+   "khuyen mai gi",
+   "khuyen mai nhu the nao",
+   "phong dang co chuong trinh nao do",
+   "uu dai gi khong"
+  ],
+  "answers": [
+   "Dạ đang có ưu đãi khai trương từ 24/07 đến 03/08 {xh} nha: giảm 10-20% cho gói 1/3/6/12 tháng, mỗi gói kèm quà tặng riêng ạ.\n\n{xh} quan tâm gói mấy tháng để em báo đúng quà của gói đó ạ?",
+   "Dạ Foxfit khai trương 24/07-03/08 giảm 10-20% gói 1/3/6/12 tháng, quà tặng riêng theo từng gói {xh} ạ.\n\n{xh} muốn em giữ suất ưu đãi cho mình không ạ?"
+  ],
+  "img": "khuyenmai",
+  "status": "active"
+ },
+ {
+  "question_norm": "co tap thu khong",
+  "variants": [
+   "cho hoi co trai nghiem khong",
+   "co buoi tap thu khong",
+   "co cho tap thu khong",
+   "hoc thu duoc khong",
+   "tap thu duoc khong",
+   "trai nghiem thu duoc khong"
+  ],
+  "answers": [
+   "Dạ có {xh} nha, bên em có tập thử miễn phí 1 buổi cho khách mới ạ.\n\n{xh} muốn ghé buổi nào để em sắp xếp HLV đón mình ạ?",
+   "Dạ khách mới được tập thử miễn phí 1 buổi luôn {xh} ạ. {xh} rảnh hôm nào ghé để em chuẩn bị đón mình nha?"
+  ],
+  "img": "",
+  "status": "active"
+ },
+ {
+  "question_norm": "trai nghiem roi moi duoc dang ky hay sao",
+  "variants": [
+   "bat buoc tap thu khong",
+   "phai tap thu truoc khi dang ky khong"
+  ],
+  "answers": [
+   "Dạ không bắt buộc {xh} nha, mình có thể đăng ký gói luôn hoặc tập thử miễn phí 1 buổi trước rồi quyết định, cái nào tiện cho {xh} cũng được ạ."
+  ],
+  "img": "",
+  "status": "active"
+ },
+ {
+  "question_norm": "tang gi",
+  "variants": [
+   "co qua khong",
+   "co tang gi khong",
+   "dang ky duoc tang gi",
+   "qua tang gi"
+  ],
+  "answers": [
+   "Dạ đợt khai trương mỗi gói có quà tặng riêng {xh} nha — ví dụ gói 12 tháng được tặng 2 tháng tập + khăn + sauna & ngâm đá miễn phí + 2 buổi HLV ạ.\n\n{xh} quan tâm gói mấy tháng để em báo đúng quà của gói đó ạ?",
+   "Dạ quà tặng theo từng gói riêng {xh} ạ, mỗi gói mỗi khác nên {xh} cho em biết mình định tập gói nào để em báo chính xác nha?"
+  ],
+  "img": "khuyenmai",
+  "status": "active"
+ },
+ {
+  "question_norm": "co tang khan khong",
+  "variants": [
+   "co khan khong",
+   "tang khan khong"
+  ],
+  "answers": [
+   "Dạ khăn được phát cho gói 12 tháng trở lên {xh} nha, riêng đợt khai trương top 10 khách sớm nhất đăng ký gói 1 tháng cũng được tặng khăn phiên bản giới hạn ạ.\n\n{xh} đang quan tâm gói nào ạ?"
+  ],
+  "img": "",
+  "status": "active"
+ },
+ {
+  "question_norm": "co nhung lop hoc gi",
+  "variants": [
+   "co bo mon gi",
+   "co lop hoc gi",
+   "co nhung lop gi",
+   "co nhung lop hoc gi tai foxfit wellness club",
+   "tap duoc nhung gi"
+  ],
+  "answers": [
+   "Dạ Foxfit thiên về tạ + kickboxing + wellness (sauna, ngâm đá) {xh} nha, tập với HLV kèm riêng 1:1 hoặc 1:2 chứ không có lớp nhóm đông ạ.\n\n{xh} thích tập kiểu nhẹ nhàng hay đốt mỡ mạnh để em tư vấn ạ?",
+   "Dạ bên em là boutique wellness club chuyên nữ: gym hiện đại, kickboxing, sauna và ngâm đá lạnh ạ. Hình thức kèm chỉ có 1:1 và 1:2, không lớp nhóm {xh} nha. {xh} quan tâm bộ môn nào nhất ạ?"
+  ],
+  "img": "",
+  "status": "active"
+ },
+ {
+  "question_norm": "co hinh phong tap khong",
+  "variants": [
+   "cho xem hinh phong",
+   "co hinh tham khao khong",
+   "con nhieu anh phong tap khong gui day",
+   "phong trong nhu the nao",
+   "xem khong gian phong"
+  ],
+  "answers": [
+   "Dạ em gửi {xh} xem hình phòng tập nha, không gian sang trọng, máy móc hiện đại và rất thoáng mát ạ. {xh} tính ghé tham quan buổi nào ạ?",
+   "Dạ đây là hình cơ sở vật chất bên em {xh} ơi, phòng thiết kế riêng cho chị em, sạch sẽ và đầy đủ máy tập ạ. {xh} ghé trải nghiệm 1 buổi cho biết nha?"
+  ],
+  "img": "ngoaithat",
+  "status": "active"
+ },
+ {
+  "question_norm": "nam tap duoc khong",
+  "variants": [
+   "co nhan nam khong",
+   "con trai tap duoc khong",
+   "nam co tap duoc khong",
+   "nam gioi co tap duoc khong"
+  ],
+  "answers": [
+   "Dạ Foxfit là phòng gym chuyên nữ {xh} ạ, không gian và dịch vụ thiết kế riêng cho chị em. Người thân nam đưa đón ngồi chờ thì thoải mái ạ.\n\nNếu {xh} hỏi cho người thân nam thì để lại số điện thoại, anh quản lý tư vấn cụ thể giúp mình nha."
+  ],
+  "img": "",
+  "status": "active"
+ },
+ {
+  "question_norm": "co sauna khong",
+  "variants": [
+   "co xong hoi khong",
+   "sauna mien phi khong",
+   "xong hoi co mat phi khong",
+   "xong hoi gia sao"
+  ],
+  "answers": [
+   "Dạ có sauna xông hơi riêng cho nữ luôn {xh} ạ.\n\nSauna và ngâm đá miễn phí là quyền lợi riêng của gói 12 tháng, các gói khác dùng lẻ 50k/buổi mỗi dịch vụ nha. {xh} đang quan tâm gói nào ạ?",
+   "Dạ bên em có sauna riêng cho nữ {xh} nha. Gói 12 tháng được dùng sauna & ngâm đá miễn phí, gói khác dùng lẻ 50k/buổi ạ. {xh} muốn em tư vấn gói 12 tháng không ạ?"
+  ],
+  "img": "",
+  "status": "active"
+ },
+ {
+  "question_norm": "co ngam da khong",
+  "variants": [
+   "ice bath khong",
+   "ngam da gia sao",
+   "ngam da lanh khong"
+  ],
+  "answers": [
+   "Dạ có ngâm đá lạnh giúp phục hồi cơ nhanh lắm {xh} ạ. Gói 12 tháng được dùng miễn phí, các gói khác dùng lẻ 50k/buổi nha. {xh} đang quan tâm phục hồi hay tập tạ ạ?"
+  ],
+  "img": "",
+  "status": "active"
+ },
+ {
+  "question_norm": "so quan ly dau",
+  "variants": [
+   "cho xin hotline",
+   "cho xin so quan ly",
+   "hotline bao nhieu",
+   "so dien thoai phong",
+   "so zalo phong"
+  ],
+  "answers": [
+   "Dạ hotline kiêm Zalo bên em là 058 675 7779 {xh} nha, mình gọi khung 5h30-20h30 là có người nghe ạ.\n\nHoặc {xh} để lại số, em nhờ anh quản lý gọi lại cho mình đỡ tốn cước ạ."
+  ],
+  "img": "",
+  "status": "active"
+ },
+ {
+  "question_norm": "co kickboxing khong",
+  "variants": [
+   "co day kickboxing khong",
+   "hoc kickboxing duoc khong",
+   "kickboxing khong"
+  ],
+  "answers": [
+   "Dạ có {xh} nha, kickboxing bên em học với HLV kèm riêng 1:1 qua gói PT nên lên kỹ thuật nhanh, vừa đốt mỡ vừa xả stress ạ.\n\n{xh} muốn tập kickboxing để giảm cân hay để khoẻ và tự vệ ạ?"
+  ],
+  "img": "",
+  "status": "active"
+ },
+ {
+  "question_norm": "co tu do khong",
+  "variants": [
+   "co cho tam khong",
+   "co phong thay do khong",
+   "co tu khoa khong",
+   "gui do o dau"
+  ],
+  "answers": [
+   "Dạ có tủ chung miễn phí {xh} nha, muốn riêng tư hơn thì thuê tủ riêng 350k/tháng ạ.\n\nPhòng thay đồ và khu tắm có sẵn đồ tắm gội luôn, tập xong tắm sạch về liền ạ."
+  ],
+  "img": "",
+  "status": "active"
+ },
+ {
+  "question_norm": "co cho gui xe khong",
+  "variants": [
+   "co bai xe khong",
+   "dau xe o dau",
+   "gui xe o dau"
+  ],
+  "answers": [
+   "Dạ có chỗ để xe ngay trong khuôn viên phòng {xh} nha, tiện lắm ạ. {xh} tính ghé buổi nào để em đón ạ?"
+  ],
+  "img": "",
+  "status": "active"
+ },
+ {
+  "question_norm": "coc online duoc khong",
+  "variants": [
+   "coc giu cho duoc khong",
+   "dat coc truoc duoc khong",
+   "thanh toan tra gop khong",
+   "tra gop duoc khong"
+  ],
+  "answers": [
+   "Dạ được {xh} nha, bên em nhận đặt cọc online để giữ chỗ + giữ khuyến mãi, và có trả góp qua thẻ tín dụng ạ.\n\n{xh} cho em xin số điện thoại để anh quản lý hướng dẫn thủ tục nhanh gọn cho mình nha?"
+  ],
+  "img": "",
+  "status": "active"
+ },
+ {
+  "question_norm": "bao luu duoc khong",
+  "variants": [
+   "chuyen nhuong goi duoc khong",
+   "co bao luu khong",
+   "sang ten goi duoc khong",
+   "tam ngung goi duoc khong"
+  ],
+  "answers": [
+   "Dạ được {xh} nha: khi đau ốm hay lý do chính đáng, gói 12 tháng bảo lưu tối đa 3 tháng, gói 18-36 tháng tối đa 6 tháng ạ.\n\nGói cũng chuyển nhượng được cho người khác với phí 500k ạ. {xh} đang quan tâm gói nào để em tư vấn kỹ hơn ạ?"
+  ],
+  "img": "",
+  "status": "active"
+ },
+ {
+  "question_norm": "het khuyen mai con gia nay khong",
+  "variants": [
+   "chot sau ngay 3 8 con uu dai khong",
+   "qua dot khuyen mai gia sao",
+   "sau khai truong con gia nay khong"
+  ],
+  "answers": [
+   "Dạ {xh} chốt qua page hoặc web trong đợt khai trương thì được giữ giá ưu đãi kể cả đăng ký sau 03/08 nha.\n\n{xh} muốn em giữ suất ưu đãi trước cho mình không, chưa cần cọc gì đâu ạ?"
+  ],
+  "img": "",
+  "status": "active"
+ },
+ {
+  "question_norm": "co website khong",
+  "variants": [
+   "co web khong",
+   "website gi",
+   "cho xin website",
+   "cho xin link web",
+   "web ten gi",
+   "trang web la gi",
+   "xem tren web nao"
+  ],
+  "answers": [
+   "Dạ website bên em là https://www.foxfit.vn {xh} nha, mình xem thông tin gói tập và ưu đãi khai trương trên đó được luôn ạ.\n\n{xh} đang quan tâm gói nào để em tư vấn thêm ạ?"
+  ],
+  "img": "",
+  "status": "active"
+ },
+ {
+  "question_norm": "sao gia khac hinh",
+  "variants": [
+   "sao bang gia nay khac tin nhan phia tren",
+   "sao gia khac trong hinh",
+   "gia trong hinh khac",
+   "gia trong anh khac",
+   "sao bang gia khac",
+   "sao gia khac trong anh",
+   "gia khac hinh",
+   "gia khac trong anh",
+   "sao gia trong hinh khac gia nhan tin"
+  ],
+  "answers": [
+   "Dạ ảnh là bảng giá niêm yết gốc {xh} nha, còn giá em nhắn là giá ĐÃ áp ưu đãi khai trương nên thấp hơn — ví dụ gói 12 tháng từ 3.800k chỉ còn 3.040k ạ.\n\n{xh} cứ yên tâm chốt theo giá em nhắn nha, đăng ký trong đợt khai trương (tới 03/08) còn được giữ giá ưu đãi luôn ạ.",
+   "Dạ phần giá này để anh quản lý giải thích kỹ cho {xh} luôn cho chắc nha — {xh} cho em xin số điện thoại để anh gọi tư vấn và giữ ưu đãi khai trương cho mình được không ạ?"
+  ],
+  "img": "",
+  "status": "active"
+ },
+ {
+  "question_norm": "goi 1 thang tang gi",
+  "variants": [
+   "goi 1 thang co qua tang gi khong",
+   "goi 1 thang co qua gi",
+   "goi 1 thang duoc tang gi",
+   "goi 1 thang co tang gi khong",
+   "goi 1 thang tang gi khong",
+   "qua tang goi 1 thang",
+   "goi 1 thang co qua khong"
+  ],
+  "answers": [
+   "Dạ gói 1 tháng có quà tặng DUY NHẤT 2 buổi PT 1:1 (không gồm giãn cơ) + khăn giới hạn cho 10 khách đăng ký sớm nhất, không có quà nào khác ạ.\n\n{xh} định tập gói 1 tháng để em giữ ưu đãi khai trương cho mình nha?"
+  ],
+  "img": "",
+  "status": "active"
+ },
+ {
+  "question_norm": "goi 3 thang tang gi",
+  "variants": [
+   "goi 3 thang co qua tang gi khong",
+   "goi 3 thang co qua gi",
+   "goi 3 thang duoc tang gi",
+   "goi 3 thang co tang gi khong",
+   "goi 3 thang tang gi khong",
+   "qua tang goi 3 thang",
+   "goi 3 thang co qua khong"
+  ],
+  "answers": [
+   "Dạ gói 3 tháng có quà tặng DUY NHẤT 1 buổi PT 1:1 (không gồm giãn cơ), không có quà nào khác ạ.\n\n{xh} định tập gói 3 tháng để em giữ ưu đãi khai trương cho mình nha?"
+  ],
+  "img": "",
+  "status": "active"
+ },
+ {
+  "question_norm": "goi 6 thang tang gi",
+  "variants": [
+   "goi 6 thang co qua tang gi khong",
+   "goi 6 thang co qua gi",
+   "goi 6 thang duoc tang gi",
+   "goi 6 thang co tang gi khong",
+   "goi 6 thang tang gi khong",
+   "qua tang goi 6 thang",
+   "goi 6 thang co qua khong"
+  ],
+  "answers": [
+   "Dạ gói 6 tháng có quà tặng DUY NHẤT 1 buổi tập miễn phí (không kèm PT), không có quà nào khác ạ.\n\n{xh} định tập gói 6 tháng để em giữ ưu đãi khai trương cho mình nha?"
+  ],
+  "img": "",
+  "status": "active"
+ },
+ {
+  "question_norm": "goi 12 thang tang gi",
+  "variants": [
+   "goi 12 thang co qua tang gi khong",
+   "goi 12 thang co qua gi",
+   "goi 12 thang duoc tang gi",
+   "goi 12 thang co tang gi khong",
+   "goi 12 thang tang gi khong",
+   "qua tang goi 12 thang",
+   "goi 12 thang co qua khong"
+  ],
+  "answers": [
+   "Dạ gói 12 tháng có quà tặng DUY NHẤT 2 tháng tập miễn phí + khăn + sauna & ngâm đá miễn phí + 2 buổi HLV, không có quà nào khác ạ.\n\n{xh} định tập gói 12 tháng để em giữ ưu đãi khai trương cho mình nha?"
+  ],
+  "img": "",
+  "status": "active"
+ },
+ {
+  "question_norm": "goi khong hlv",
+  "variants": [
+   "goi khong hlv shop",
+   "bao gia goi khong hlv",
+   "xin bao gia goi khong hlv",
+   "goi khong co hlv",
+   "goi khong kem hlv",
+   "goi khong pt",
+   "goi khong co pt",
+   "goi khong bao gom pt",
+   "gia goi khong hlv",
+   "goi tu tap",
+   "goi tu tap gia bao nhieu",
+   "khong can hlv",
+   "khong can tap voi hlv",
+   "khong can pt chi tu tap",
+   "tu tap khong can pt",
+   "khong can tap voi hlv chi tu tap ta thoi",
+   "chi tu tap thoi khong can hlv"
+  ],
+  "answers": [
+   "Dạ tất cả gói Members bên em đều là gói TỰ TẬP {xh} nha — giá em báo là giá tự tập, KHÔNG bao gồm PT ạ:\n\n• Gói 1 tháng: 540k ạ\n• Gói 3 tháng: 1.233k ạ\n• Gói 6 tháng: 1.760k ạ\n• Gói 12 tháng: 3.040k ạ\n• Gói 18 tháng: 5.500k ạ\n• Gói 24 tháng: 6.500k ạ\n• Gói 36 tháng: 9.500k ạ\n\n{xh} tự tập thoải mái với đầy đủ máy móc, được tặng 1 buổi hướng dẫn máy miễn phí. Chỉ khi nào muốn HLV kèm riêng từng buổi mới tính thêm 500k/buổi ạ.",
+   "Dạ giá các gói Members chính là giá TỰ TẬP, không bao gồm PT {xh} nha. PT kèm riêng là dịch vụ cộng thêm (500k/buổi lẻ) — không đăng ký PT thì {xh} cứ tập tự do với toàn bộ máy móc ạ.\n\n{xh} định tập gói mấy tháng để em báo giá khai trương cho chuẩn ạ?"
+  ],
+  "img": "banggia",
+  "status": "active"
+ },
+ {
+  "question_norm": "goi 1 thang gia bao nhieu",
+  "variants": [
+   "goi 1 thang bao nhieu",
+   "goi 1 thang gia sao",
+   "goi 1 thang bao nhieu tien",
+   "gia goi 1 thang",
+   "goi 1 thang co khuyen mai gi khong",
+   "goi 1 thang khuyen mai gi",
+   "goi 1 thang uu dai gi",
+   "goi 1 thang co giam gia khong"
+  ],
+  "answers": [
+   "Dạ gói 1 tháng khai trương giảm 10% còn 540k (gốc 600k) {xh} nha. Quà tặng riêng: 2 buổi PT 1:1 (không gồm giãn cơ) + khăn giới hạn cho 10 khách đăng ký sớm nhất ạ.\n\n{xh} muốn em giữ suất ưu đãi cho mình không ạ?"
+  ],
+  "img": "banggia",
+  "status": "active"
+ },
+ {
+  "question_norm": "goi 3 thang gia bao nhieu",
+  "variants": [
+   "goi 3 thang bao nhieu",
+   "goi 3 thang gia sao",
+   "goi 3 thang bao nhieu tien",
+   "gia goi 3 thang",
+   "goi 3 thang co khuyen mai gi khong",
+   "goi 3 thang khuyen mai gi",
+   "goi 3 thang uu dai gi",
+   "goi 3 thang co giam gia khong"
+  ],
+  "answers": [
+   "Dạ gói 3 tháng khai trương giảm 15% còn 1.233k (gốc 1.450k) {xh} nha. Quà tặng riêng: 1 buổi PT 1:1 (không gồm giãn cơ) ạ.\n\n{xh} muốn em giữ suất ưu đãi cho mình không ạ?"
+  ],
+  "img": "banggia",
+  "status": "active"
+ },
+ {
+  "question_norm": "goi 6 thang gia bao nhieu",
+  "variants": [
+   "goi 6 thang bao nhieu",
+   "goi 6 thang gia sao",
+   "goi 6 thang bao nhieu tien",
+   "gia goi 6 thang",
+   "goi 6 thang co khuyen mai gi khong",
+   "goi 6 thang khuyen mai gi",
+   "goi 6 thang uu dai gi",
+   "goi 6 thang co giam gia khong"
+  ],
+  "answers": [
+   "Dạ gói 6 tháng khai trương giảm 20% còn 1.760k (gốc 2.200k) {xh} nha. Quà tặng riêng: 1 buổi tập miễn phí (không kèm PT) ạ.\n\n{xh} muốn em giữ suất ưu đãi cho mình không ạ?"
+  ],
+  "img": "banggia",
+  "status": "active"
+ },
+ {
+  "question_norm": "goi 12 thang gia bao nhieu",
+  "variants": [
+   "goi 12 thang bao nhieu",
+   "goi 12 thang gia sao",
+   "goi 12 thang bao nhieu tien",
+   "gia goi 12 thang",
+   "goi 12 thang co khuyen mai gi khong",
+   "goi 12 thang khuyen mai gi",
+   "goi 12 thang uu dai gi",
+   "goi 12 thang co giam gia khong"
+  ],
+  "answers": [
+   "Dạ gói 12 tháng khai trương giảm 20% còn 3.040k (gốc 3.800k) {xh} nha. Quà tặng riêng: 2 tháng tập miễn phí + khăn + sauna & ngâm đá miễn phí + 2 buổi HLV ạ.\n\n{xh} muốn em giữ suất ưu đãi cho mình không ạ?"
+  ],
+  "img": "banggia",
+  "status": "active"
+ }
+]

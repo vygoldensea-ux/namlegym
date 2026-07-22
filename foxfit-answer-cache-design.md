@@ -81,3 +81,10 @@ Triết lý: "thà chậm mà chuẩn" — rủi ro thì máy chỉ được IM 
 
 ## LƯU Ý 21/07 khuya: file BẢNG-GIÁ-FOXFIX.pdf (bảng giá PT 1:1/1:2 mới)
 Chủ dự án xác nhận phía khách hàng KHÔNG thay bảng giá / KHÔNG cập nhật gì từ PDF này. Bot giữ nguyên facts hiện hành (PT lẻ 500k/buổi, gói PT dài hạn không báo giá qua chat). PDF chỉ để tham khảo — TUYỆT ĐỐI không tự áp vào prompt/cache khi chưa có lệnh mới.
+
+## SỰ CỐ + KHẮC PHỤC 22/07 trưa
+- 07:37 sáng 22/07: chủ gym (Lê Mr, Telegram) dạy bot tin "dàn máy tập mới" (K#29) → cơ chế "chủ dạy → xoá toàn kho cache" chạy đúng thiết kế → kho 33 câu về 0, cả buổi sáng bot chạy 100% AI (vẫn đúng nhờ guard, trừ 1 ca "Giá tham khảo ạ" trả thiếu bảng giá).
+- 11:47: chủ gửi ảnh "bảng giá PT" qua Telegram — ảnh KHÔNG được học (bot boss chỉ đọc text), não không đổi → khớp lệnh không cập nhật giá.
+- Khắc phục: reseed nguyên kho 32 câu (id 36-67) từ tools/cache_seed_full.json — file backup này từ nay là bản khôi phục chuẩn, kho bị xoá là bơm lại được trong 2 phút. Máy soát facts: 32/32 sạch.
+- Vá thêm (bản active 7885bbc5): lưới ép giá bắt thêm "giá tham khảo/giá tháng"; sửa lỗi chính tả "tạa"→"tạ" mọi reply; row giá thêm 6 biến thể (giá tham khảo, giá tập tháng sao...).
+- TODO: sau khi dạy kiến thức mới nên tự reseed kho từ backup (trừ câu mâu thuẫn với bài vừa dạy) — bàn với chủ dự án.
