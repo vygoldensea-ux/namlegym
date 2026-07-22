@@ -52,3 +52,7 @@
 2. `2bWS3ugkh3cComfi` "Foxfit Ping Lai Khach": node **Build Ping AI** (prompt ping).
 3. **Thư viện 42 mẫu M** (node Tang 1 - FAQ Matching) — CHỨA THÔNG TIN CŨ (M8 tập thử, "tặng 3 buổi HLV") cần rà sửa.
 4. Ảnh bảng giá/khuyến mãi (attachment_id bảng `foxfit_images`): banggia 4965389120354278, khuyenmai 1308505501366208, ngoaithat 1049179444462826.
+
+## Bổ sung 22/07 tối (chủ gym xác nhận)
+- INBODY: CÓ máy đo InBody tại phòng. Phí/miễn phí đo chưa chốt — không tự hứa miễn phí, chi tiết để quản lý tư vấn.
+- ƯU ĐÃI HSSV: KHÔNG có ưu đãi riêng — học sinh sinh viên hưởng chung ưu đãi khai trương như mọi khách, không ngoại lệ.

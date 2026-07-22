@@ -534,5 +534,43 @@
   ],
   "img": "banggia",
   "status": "active"
+ },
+ {
+  "question_norm": "co may inbody khong",
+  "variants": [
+   "co inbody khong",
+   "co do inbody khong",
+   "ben co may inbody khong",
+   "co may do inbody khong",
+   "do inbody duoc khong",
+   "inbody co khong",
+   "su dung tap ben ad co duoc do may inbody khong",
+   "tap ben ad co duoc do may inbody khong",
+   "co do chi so co the khong"
+  ],
+  "answers": [
+   "Dạ CÓ {xh} nha, bên em có máy đo InBody tại phòng để đo chỉ số cơ thể và theo dõi tiến độ tập luôn ạ.\n\n{xh} ghé phòng để HLV đo và tư vấn lộ trình theo đúng chỉ số của mình nha?"
+  ],
+  "img": "",
+  "status": "active"
+ },
+ {
+  "question_norm": "co uu dai cho hoc sinh sinh vien khong",
+  "variants": [
+   "co uu dai hssv khong",
+   "uu dai hoc sinh sinh vien",
+   "hssv co giam gia khong",
+   "co giam gia cho sinh vien khong",
+   "sinh vien co uu dai khong",
+   "co uu dai cho hssv khong",
+   "uu dai sinh vien",
+   "hoc sinh co giam gia khong",
+   "co uu dai cho hssv khong c ui"
+  ],
+  "answers": [
+   "Dạ bên em không có ưu đãi riêng cho học sinh sinh viên {xh} nha — nhưng đợt khai trương 24/07-03/08 đang giảm 10-20% gói 1/3/6/12 tháng áp dụng chung cho mọi khách, {xh} cũng được hưởng y vậy ạ.\n\n{xh} định tập gói mấy tháng để em giữ ưu đãi cho mình ạ?"
+  ],
+  "img": "",
+  "status": "active"
  }
 ]
