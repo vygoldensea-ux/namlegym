@@ -78,3 +78,6 @@ Triết lý: "thà chậm mà chuẩn" — rủi ro thì máy chỉ được IM 
 - Row #30-33 "gói 1/3/6/12 tháng giá/KM bao nhiêu" (giá gốc→giá giảm + quà đúng gói) — phủ 2 câu digest hay hỏi nhất còn lọt AI.
 - Guard mới: khách cảm ơn/tạm biệt mà CHƯA cho số + chưa từ chối → câu chào kết tự kèm xin số nhẹ (được phép xin lần 2 ở thời điểm này). Publish fe657150, test sống pass.
 - TODO sáng 22/07: echo human-takeover (tin rep tay từ page → lưu vào history + bot im 30 phút với khách đó) — FB không có API "admin đang gõ" nên đây là cách đúng duy nhất.
+
+## LƯU Ý 21/07 khuya: file BẢNG-GIÁ-FOXFIX.pdf (bảng giá PT 1:1/1:2 mới)
+Chủ dự án xác nhận phía khách hàng KHÔNG thay bảng giá / KHÔNG cập nhật gì từ PDF này. Bot giữ nguyên facts hiện hành (PT lẻ 500k/buổi, gói PT dài hạn không báo giá qua chat). PDF chỉ để tham khảo — TUYỆT ĐỐI không tự áp vào prompt/cache khi chưa có lệnh mới.
