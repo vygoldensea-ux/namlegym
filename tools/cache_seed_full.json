@@ -610,5 +610,29 @@
   ],
   "img": "",
   "status": "active"
+ },
+ {
+  "question_norm": "hoat dong chua",
+  "variants": [
+   "da hoat dong chua",
+   "ben da di vao hoat dong chua",
+   "ben da hoat dong chua",
+   "khai truong chua",
+   "da khai truong chua",
+   "mo cua chua",
+   "da mo cua chua",
+   "da mo chua",
+   "phong mo chua",
+   "phong da hoat dong chua",
+   "ben minh mo chua",
+   "da di vao hoat dong chua",
+   "gio mo chua",
+   "hoat dong chua em"
+  ],
+  "answers": [
+   "Dạ Foxfit khai trương từ 24/07 đến 03/08 nha {xh}. {xh} có thể chốt gói qua page ngay để giữ ưu đãi khai trương, hoặc ghé phòng để tham quan và tập thử nha.\n\n{xh} muốn em tư vấn gói tập hay sắp xếp buổi ghé trước ạ?"
+  ],
+  "img": "",
+  "status": "active"
  }
 ]

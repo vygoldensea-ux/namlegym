@@ -88,3 +88,12 @@ Chủ dự án xác nhận phía khách hàng KHÔNG thay bảng giá / KHÔNG c
 - Khắc phục: reseed nguyên kho 32 câu (id 36-67) từ tools/cache_seed_full.json — file backup này từ nay là bản khôi phục chuẩn, kho bị xoá là bơm lại được trong 2 phút. Máy soát facts: 32/32 sạch.
 - Vá thêm (bản active 7885bbc5): lưới ép giá bắt thêm "giá tham khảo/giá tháng"; sửa lỗi chính tả "tạa"→"tạ" mọi reply; row giá thêm 6 biến thể (giá tham khảo, giá tập tháng sao...).
 - TODO: sau khi dạy kiến thức mới nên tự reseed kho từ backup (trừ câu mâu thuẫn với bài vừa dạy) — bàn với chủ dự án.
+
+## SỰ CỐ NGHIÊM TRỌNG 23/07 (case Trần Hà + 4 lỗi lặt vặt) — VÁ GỐC
+Bản active Za97w7TTm58atzFd = ae4a5188 (chr guard + phone-strip fix), cbc = xưng hô rút gọn + luật "đã cho số".
+1. RÒ LUẬT (nặng nhất): "Hoạt động chưa em" → bot đọc nguyên luật xưng hô ra cho khách. Gốc 2 tầng: (a) prompt cũ có VÍ DỤ XẤU 'KHÔNG thông báo kiểu "em sẽ gọi chị là..."' → AI chép luôn; (b) lưới metaKw là whitelist từng cụm → cụm mới lọt (đã lọt 3 lần: Thi Thi, Hau Nguyen, Trần Hà). + lỗi thiết kế: khi CẢ tin là meta → lưới giữ nguyên text rò (fixedParagraphs.length=0 → không update ans). VÁ: (a) prompt bỏ ví dụ xấu; (b) lưới chuyển từ whitelist sang BẮT CẢ LỚP (bất kỳ câu chứa 'xưng'/'cách gọi'/'là bot' → cắt, trừ 'xung quanh'); (c) khi cắt sạch → ans='' → fallback an toàn. Test 18 câu (7 cắt + 11 giữ) pass.
+2. XIN SỐ LẠI (Xuyên Bảo): đã cho số → 3s sau "add zalo" → bot xin số lại. Gốc: lưới xoá-câu-xin-số CÙNG lỗi "cả tin bị xoá → giữ nguyên". VÁ: cắt sạch + phoneAlready → thay bằng xác nhận "em lưu rồi, quản lý sẽ liên hệ".
+3. LIKE → "nhận được hình" (Trần Hà): like vào nhánh ảnh Tang 0. VÁ: sticker/ảnh-không-text → cảm ơn nhẹ ❤️/😊, bỏ "nhận được ảnh/hình".
+4. "em sẽ áp dụng ngay" máy móc (Trương Ngọc đã hẹn gọi) + xưng "khách": VÁ prompt thêm luật "KHÁCH ĐÃ CHO SĐT/ĐÃ HẸN → chỉ cảm ơn + xác nhận gọi lại, cấm máy móc" + "không gọi khách là 'khách'".
+5. "hoạt động chưa/khai trương chưa" hay bị AI trả nhạt → cache row deterministic (14 biến thể).
+CÒN LẠI (chưa vá, ghi nhận): tin "chờ em xíu" lặp 2 lần = Claude API lỗi/timeout 2 tin liên tiếp lúc cao điểm (infra, hiếm) — theo dõi.
