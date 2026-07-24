@@ -13,7 +13,7 @@ import json, re, sys, unicodedata
 # ================== NGUỒN CHUẨN (đồng bộ với foxfit-facts.md) ==================
 PRICES = {  # giá khai trương -> gói (tháng)
     '540k': 1, '1.233k': 3, '1.760k': 6, '3.040k': 12,
-    '5.500k': 18, '6.500k': 24, '9.500k': 36,
+    '4.400k': 18, '5.200k': 24, '7.600k': 36,
 }
 BASE_PRICES = {'600k': 1, '1.450k': 3, '2.200k': 6, '3.800k': 12}  # giá gốc
 OTHER_MONEY = {'500k', '50k', '350k'}  # PT lẻ / sauna-ngâm đá lẻ / tủ riêng

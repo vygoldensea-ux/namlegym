@@ -28,8 +28,8 @@
    "gia thang sao"
   ],
   "answers": [
-   "Dạ em gửi {xh} bảng giá gói Members nha.\n\n• Gói 1 tháng: 540k ạ\n• Gói 3 tháng: 1.233k ạ\n• Gói 6 tháng: 1.760k ạ\n• Gói 12 tháng: 3.040k ạ\n• Gói 18 tháng: 5.500k ạ\n• Gói 24 tháng: 6.500k ạ\n• Gói 36 tháng: 9.500k ạ\n\nĐang khai trương giảm 10-20% cho gói 1/3/6/12 tháng, mỗi gói có quà riêng ạ. {xh} tính tập gói mấy tháng để em tư vấn cho chuẩn ạ?",
-   "Dạ {xh} xem bảng giá đầy đủ bên em nha:\n\n• Gói 1 tháng: 540k ạ\n• Gói 3 tháng: 1.233k ạ\n• Gói 6 tháng: 1.760k ạ\n• Gói 12 tháng: 3.040k ạ\n• Gói 18 tháng: 5.500k ạ\n• Gói 24 tháng: 6.500k ạ\n• Gói 36 tháng: 9.500k ạ\n\nGiá trên đã áp ưu đãi khai trương (tới 03/08) ạ. {xh} quan tâm gói nào để em báo quà tặng riêng của gói đó nha?"
+   "Dạ em gửi {xh} bảng giá gói Members nha.\n\n• Gói 1 tháng: 540k ạ\n• Gói 3 tháng: 1.233k ạ\n• Gói 6 tháng: 1.760k ạ\n• Gói 12 tháng: 3.040k ạ\n• Gói 18 tháng: 4.400k ạ\n• Gói 24 tháng: 5.200k ạ\n• Gói 36 tháng: 7.600k ạ\n\nĐang khai trương giảm 10-20% cho tất cả các gói, mỗi gói có quà riêng ạ. {xh} tính tập gói mấy tháng để em tư vấn cho chuẩn ạ?",
+   "Dạ {xh} xem bảng giá đầy đủ bên em nha:\n\n• Gói 1 tháng: 540k ạ\n• Gói 3 tháng: 1.233k ạ\n• Gói 6 tháng: 1.760k ạ\n• Gói 12 tháng: 3.040k ạ\n• Gói 18 tháng: 4.400k ạ\n• Gói 24 tháng: 5.200k ạ\n• Gói 36 tháng: 7.600k ạ\n\nGiá trên đã áp ưu đãi khai trương (tới 03/08) ạ. {xh} quan tâm gói nào để em báo quà tặng riêng của gói đó nha?"
   ],
   "img": "banggia",
   "status": "active"
@@ -98,8 +98,8 @@
    "uu dai gi khong"
   ],
   "answers": [
-   "Dạ đang có ưu đãi khai trương từ 24/07 đến 03/08 {xh} nha: giảm 10-20% cho gói 1/3/6/12 tháng, mỗi gói kèm quà tặng riêng ạ.\n\n{xh} quan tâm gói mấy tháng để em báo đúng quà của gói đó ạ?",
-   "Dạ Foxfit khai trương 24/07-03/08 giảm 10-20% gói 1/3/6/12 tháng, quà tặng riêng theo từng gói {xh} ạ.\n\n{xh} muốn em giữ suất ưu đãi cho mình không ạ?"
+   "Dạ đang có ưu đãi khai trương từ 24/07 đến 03/08 {xh} nha: giảm 10-20% cho tất cả các gói, mỗi gói kèm quà tặng riêng ạ.\n\n{xh} quan tâm gói mấy tháng để em báo đúng quà của gói đó ạ?",
+   "Dạ Foxfit khai trương 24/07-03/08 giảm 10-20% tất cả các gói, quà tặng riêng theo từng gói {xh} ạ.\n\n{xh} muốn em giữ suất ưu đãi cho mình không ạ?"
   ],
   "img": "khuyenmai",
   "status": "active"
@@ -142,7 +142,7 @@
    "qua tang gi"
   ],
   "answers": [
-   "Dạ đợt khai trương mỗi gói có quà tặng riêng {xh} nha — ví dụ gói 12 tháng được tặng 2 tháng tập + khăn + sauna & ngâm đá miễn phí + 2 buổi HLV ạ.\n\n{xh} quan tâm gói mấy tháng để em báo đúng quà của gói đó ạ?",
+   "Dạ đợt khai trương mỗi gói có quà tặng riêng {xh} nha — ví dụ gói 12 tháng được tặng 2 tháng tập + khăn + sauna & ngâm đá miễn phí + 1 buổi HLV ạ.\n\n{xh} quan tâm gói mấy tháng để em báo đúng quà của gói đó ạ?",
    "Dạ quà tặng theo từng gói riêng {xh} ạ, mỗi gói mỗi khác nên {xh} cho em biết mình định tập gói nào để em báo chính xác nha?"
   ],
   "img": "khuyenmai",
@@ -413,7 +413,7 @@
    "goi 6 thang co qua khong"
   ],
   "answers": [
-   "Dạ gói 6 tháng có quà tặng DUY NHẤT 1 buổi tập miễn phí (không kèm PT), không có quà nào khác ạ.\n\n{xh} định tập gói 6 tháng để em giữ ưu đãi khai trương cho mình nha?"
+   "Dạ gói 6 tháng có quà tặng DUY NHẤT 1 buổi tập cùng HLV, không có quà nào khác ạ.\n\n{xh} định tập gói 6 tháng để em giữ ưu đãi khai trương cho mình nha?"
   ],
   "img": "",
   "status": "active"
@@ -430,7 +430,7 @@
    "goi 12 thang co qua khong"
   ],
   "answers": [
-   "Dạ gói 12 tháng có quà tặng DUY NHẤT 2 tháng tập miễn phí + khăn + sauna & ngâm đá miễn phí + 2 buổi HLV, không có quà nào khác ạ.\n\n{xh} định tập gói 12 tháng để em giữ ưu đãi khai trương cho mình nha?"
+   "Dạ gói 12 tháng có quà tặng DUY NHẤT 2 tháng tập miễn phí + khăn + sauna & ngâm đá miễn phí + 1 buổi HLV, không có quà nào khác ạ.\n\n{xh} định tập gói 12 tháng để em giữ ưu đãi khai trương cho mình nha?"
   ],
   "img": "",
   "status": "active"
@@ -457,7 +457,7 @@
    "chi tu tap thoi khong can hlv"
   ],
   "answers": [
-   "Dạ tất cả gói Members bên em đều là gói TỰ TẬP {xh} nha — giá em báo là giá tự tập, KHÔNG bao gồm PT ạ:\n\n• Gói 1 tháng: 540k ạ\n• Gói 3 tháng: 1.233k ạ\n• Gói 6 tháng: 1.760k ạ\n• Gói 12 tháng: 3.040k ạ\n• Gói 18 tháng: 5.500k ạ\n• Gói 24 tháng: 6.500k ạ\n• Gói 36 tháng: 9.500k ạ\n\n{xh} tự tập thoải mái với đầy đủ máy móc, được tặng 1 buổi hướng dẫn máy miễn phí. Chỉ khi nào muốn HLV kèm riêng từng buổi mới tính thêm 500k/buổi ạ.",
+   "Dạ tất cả gói Members bên em đều là gói TỰ TẬP {xh} nha — giá em báo là giá tự tập, KHÔNG bao gồm PT ạ:\n\n• Gói 1 tháng: 540k ạ\n• Gói 3 tháng: 1.233k ạ\n• Gói 6 tháng: 1.760k ạ\n• Gói 12 tháng: 3.040k ạ\n• Gói 18 tháng: 4.400k ạ\n• Gói 24 tháng: 5.200k ạ\n• Gói 36 tháng: 7.600k ạ\n\n{xh} tự tập thoải mái với đầy đủ máy móc, được tặng 1 buổi hướng dẫn máy miễn phí. Chỉ khi nào muốn HLV kèm riêng từng buổi mới tính thêm 500k/buổi ạ.",
    "Dạ giá các gói Members chính là giá TỰ TẬP, không bao gồm PT {xh} nha. PT kèm riêng là dịch vụ cộng thêm (500k/buổi lẻ) — không đăng ký PT thì {xh} cứ tập tự do với toàn bộ máy móc ạ.\n\n{xh} định tập gói mấy tháng để em báo giá khai trương cho chuẩn ạ?"
   ],
   "img": "banggia",
@@ -512,7 +512,7 @@
    "goi 6 thang co giam gia khong"
   ],
   "answers": [
-   "Dạ gói 6 tháng khai trương giảm 20% còn 1.760k (gốc 2.200k) {xh} nha. Quà tặng riêng: 1 buổi tập miễn phí (không kèm PT) ạ.\n\n{xh} muốn em giữ suất ưu đãi cho mình không ạ?"
+   "Dạ gói 6 tháng khai trương giảm 20% còn 1.760k (gốc 2.200k) {xh} nha. Quà tặng riêng: 1 buổi tập cùng HLV ạ.\n\n{xh} muốn em giữ suất ưu đãi cho mình không ạ?"
   ],
   "img": "banggia",
   "status": "active"
@@ -530,7 +530,7 @@
    "goi 12 thang co giam gia khong"
   ],
   "answers": [
-   "Dạ gói 12 tháng khai trương giảm 20% còn 3.040k (gốc 3.800k) {xh} nha. Quà tặng riêng: 2 tháng tập miễn phí + khăn + sauna & ngâm đá miễn phí + 2 buổi HLV ạ.\n\n{xh} muốn em giữ suất ưu đãi cho mình không ạ?"
+   "Dạ gói 12 tháng khai trương giảm 20% còn 3.040k (gốc 3.800k) {xh} nha. Quà tặng riêng: 2 tháng tập miễn phí + khăn + sauna & ngâm đá miễn phí + 1 buổi HLV ạ.\n\n{xh} muốn em giữ suất ưu đãi cho mình không ạ?"
   ],
   "img": "banggia",
   "status": "active"
@@ -568,7 +568,7 @@
    "co uu dai cho hssv khong c ui"
   ],
   "answers": [
-   "Dạ bên em không có ưu đãi riêng cho học sinh sinh viên {xh} nha — nhưng đợt khai trương 24/07-03/08 đang giảm 10-20% gói 1/3/6/12 tháng áp dụng chung cho mọi khách, {xh} cũng được hưởng y vậy ạ.\n\n{xh} định tập gói mấy tháng để em giữ ưu đãi cho mình ạ?"
+   "Dạ bên em không có ưu đãi riêng cho học sinh sinh viên {xh} nha — nhưng đợt khai trương 24/07-03/08 đang giảm 10-20% tất cả các gói áp dụng chung cho mọi khách, {xh} cũng được hưởng y vậy ạ.\n\n{xh} định tập gói mấy tháng để em giữ ưu đãi cho mình ạ?"
   ],
   "img": "",
   "status": "active"
